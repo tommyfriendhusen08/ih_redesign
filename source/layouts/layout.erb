@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+    <%= favicon_tag '/images/favicon.ico' %>
+    <%= stylesheet_link_tag "site.css" %>
+    <%= yield_content :style %>
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Typekit -->
+    <script src="//use.typekit.net/cwm1uxv.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var myLatlng = new google.maps.LatLng(34.416795,-119.713683);
+        var mapOptions = {
+          center: myLatlng,
+          zoom: 13,
+          scrollwheel: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+
+        setMarkers(map, places);
+
+      }
+
+      var places = [
+        ['cadiz', 'beach', 34.398419, -119.706773, 2],
+        ['toma', 'home', 34.416795, -119.713683, 1]
+      ];
+
+      function setMarkers(map, locations) {
+        // Add markers to the map
+
+        // Marker sizes are expressed as a Size of X,Y
+        // where the origin of the image (0,0) is located
+        // in the top left of the image.
+
+        // Origins, anchor positions and coordinates of the marker
+        // increase in the X direction to the right and in
+        // the Y direction down.
+        var iconTypes = {
+          'home' : {
+            'icon' : 'images/icon-map-home.png'
+          },
+          'beach' : {
+            'icon' : 'images/icon-map-beaches.png'
+          }
+        };
+
+        // Shapes define the clickable region of the icon.
+        // The type defines an HTML &lt;area&gt; element 'poly' which
+        // traces out a polygon as a series of X,Y points. The final
+        // coordinate closes the poly by connecting to the first
+        // coordinate.
+        var shape = {
+            coords: [1, 1, 1, 40, 40, 40, 40 , 1],
+            type: 'poly'
+        };
+
+        for (var i = 0; i < locations.length; i++) {
+          var place = locations[i];
+          var myLatLng = new google.maps.LatLng(place[2], place[3]);
+          var iconType = iconTypes[place[1]].icon;
+          var image = {
+            url: iconType,
+            size: new google.maps.Size(40, 40),
+            origin: new google.maps.Point(0,0),
+            anchor: new google.maps.Point(0, 40)
+          };
+          var marker = new google.maps.Marker({
+              position: myLatLng,
+              map: map,
+              icon: image,
+              shape: shape,
+              title: place[0],
+              zIndex: place[4]
+          });
+
+          google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+              var currentLocation = locations[i][0];
+              $('.location-info-wrapper').show();
+              $('.map-location[data-location=' + currentLocation + '] .tab-take').show();
+              $('.map-location[data-location=' + currentLocation + ']').show().addClass('active');
+              $('.location-nav .location-toggle[data-toggle=take]').addClass('active');
+            }
+          })(marker, i));
+        }
+
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <%= javascript_include_tag 'picturefill', :async => true %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body class="<%= page_classes %>">
+
+    <div class="page-wrapper">
+      <header class="site-header" role="banner">
+        <% if current_page.path == 'search.html' %>
+          <%= partial "layouts/header-search" %>
+        <% else %>
+          <%= partial "layouts/header" %>
+        <% end %>
+      </header>
+
+      <main role="main">
+        <%= yield %>
+      </main>
+
+      <footer role="contentinfo">
+        <%= partial "layouts/footer" %>
+      </footer>
+      </div>
+    </div>
+
+    <!-- explore logic needed for different explore content -->
+    <%= partial "layouts/explore-destination" %>
+
+  <%= yield_content :script %>
+
+  </body>
+</html>

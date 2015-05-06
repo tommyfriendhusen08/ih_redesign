@@ -1,0 +1,102 @@
+
+<section class="hero">
+  <div class="container">
+    <hgroup class="row">
+      <h1 class="hero-title">
+        Hero Graphic or Slogan
+      </h1>
+      <div class="cta-button cta-button-md cta-button-center">
+        <% link_to '#' do %>
+          Call to action <i class="fa fa-chevron-circle-right"></i>
+        <% end %>
+      </div>
+    </hgroup>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="page-section-inner">
+      <h2 class="page-section-teaser elegant-rule">
+        lorem ipsum sit non dolor ad voluptatum magnam consequatur illo ullam et maxime earum enim molestiae maxime accusantium odio tempore <b>clients</b> officiis 
+      </h2>
+      <div class="row logo-parade logo-parade-condensed">
+        <% 18.times.with_index do |link, i| %>
+          <% if (i % 6 == 0 && i % 3 == 0 && i % 2 == 0) && i != 0 %>
+            <div class="clearfix visible-xs visible-md visible-lg"></div>
+          <% elsif (i % 4 == 0) && i != 0 %>
+            <div class="clearfix visible-xs visible-sm"></div>
+          <% elsif (i % 2 == 0) && i != 0 %>
+            <div class="clearfix visible-xs"></div>
+          <% end %>
+          <figure class="col-xs-6 col-sm-3 col-md-2 col-lg-2 logo-parade-box">
+            <% link_to '#' do %>
+              <i class="fa fa-pagelines"></i>
+            <% end %>
+          </figure>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section page-section-dark">
+  <div class="container">
+    <div class="page-section-inner">
+      <div class="row">
+        <article class="col-sm-4 col-md-4 col-lg-4 featured-article">
+          <h2 class="page-section-heading-primary">
+            <%= lorem.word.titleize %>
+          </h2>
+          <p>
+            Cupiditate ipsa repudiandae exercitationem debitis ea velit qui. molestiae nihil est non laudantium repellendus dicta totam exercitationem perspiciatis a temporibus. repellendus sed ipsa accusamus minus dolorum dolor occaecati maxime iure et molestiae at laborum.
+          </p>
+        </article>
+        <article class="col-sm-4 col-md-4 col-lg-4 featured-article">
+          <h2 class="page-section-heading-primary">
+            <%= lorem.word.titleize %>
+          </h2>
+          <p>
+            Cupiditate ipsa repudiandae exercitationem debitis ea velit qui. molestiae nihil est non laudantium repellendus dicta totam exercitationem perspiciatis a temporibus. repellendus sed ipsa accusamus minus dolorum dolor occaecati maxime iure et molestiae at laborum.
+          </p>
+        </article>
+        <article class="col-sm-4 col-md-4 col-lg-4 featured-article">
+          <h2 class="page-section-heading-primary">
+            <%= lorem.word.titleize %>
+          </h2>
+          <p>
+            Cupiditate ipsa repudiandae exercitationem debitis ea velit qui. molestiae nihil est non laudantium repellendus dicta totam exercitationem perspiciatis a temporibus. repellendus sed ipsa accusamus minus dolorum dolor occaecati maxime iure et molestiae at laborum.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="page-section-inner">
+      <h2 class="page-section-teaser elegant-rule">
+        ad voluptatum magnam consequatur illo ullam et maxime earum enim molestiae maxime accusantium odio tempore <b>sign up</b> officiis 
+      </h2>
+      <div class="row">
+        <form class="col-xs-12 col-sm-4 col-md-4 col-md-4 col-sm-offset-4 col-md-offset-4 col-md-offset-4" role="form">
+          <div class="form-group">
+            <label for="exampleInputName1">Name</label>
+            <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Check me out
+            </label>
+          </div>
+          <button type="submit" class="btn btn-cta">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

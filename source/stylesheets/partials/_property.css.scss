@@ -1,0 +1,1042 @@
+// Property Page Specific CSS
+
+.slideshow-nav {
+  position: absolute;
+  bottom: -20px;
+  right: 100px;
+  width: 46px;
+  height: 46px;
+  border-radius: 35px;
+  background-color: $gold;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 1px 1px 5px #ccc, -1px -1px 5px #ccc;
+  overflow: hidden;
+  @media screen and (max-width: 767px) {
+    right: 40px;
+  }
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+/* Map Styles
+--------------------------------------------*/
+.property-map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  #map-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .location-info-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 40px;
+    #location-close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-weight: bold;
+      font-size: 20px;
+      font-size: 2.0rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    h1, p {
+      color: #fff;
+    }
+    .location-nav {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      ul {
+        padding-left: 0;
+        margin-top: 40px;
+        li {
+          list-style: none;
+          display: inline-block;
+          text-transform: uppercase;
+          margin-right: 100px;
+          &:last-of-type {
+            margin-right: 0;
+          }
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+          &.active {
+            color: #888;
+            &:hover {
+              text-decoration: none;
+              cursor: default;
+            }
+          }
+        }
+      }
+    }
+    .tab-address {
+      display: none;
+    }
+    .tab-contact {
+      display: none;
+    }
+  }
+}
+
+.property-details {
+  @extend .section-full;
+  @extend .section-squeeze;
+  header {
+    dl {
+      margin-bottom: 20px;
+    }
+  }
+  .details-bedding {
+    margin-top: 20px;
+    h2 {
+      position: relative;
+      padding-left: 32px;
+      margin-bottom: 10px;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 24px;
+        height: 22px;
+        background: transparent image-url('sprite-details.svg') no-repeat;
+        background-size: 144px 22px;
+        background-position: -24px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    }
+    .details-beds-list {
+      padding: 0px;
+      list-style: none;
+      border-left: 1px solid $gray-charcoal;
+      overflow: hidden;
+      li {
+        float: left;
+        padding: 10px;
+        border: 1px solid $gray-charcoal;
+        border-left: none;
+        height: 120px;
+        text-align: center;
+        font-family: $serif;
+        font-style: italic;
+        color: #9a9a9a;
+        &:last-of-type {
+          border-right: 1px solid $gray-charcoal;
+        }
+        ul {
+          padding: 0;
+          margin: 0 auto 10px auto;
+          li {
+            float: left;
+            height: 64px;
+            width: 72px;
+            border: none;
+            background: transparent image-url('sprite-amenities.svg') no-repeat;
+            background-size: 1440px 64px;
+            background-position: 0 50%;
+            margin-right: 5px;
+            padding: 0;
+            @extend .hide-text;
+            &:last-of-type {
+              border: none;
+              margin-right: 0px;
+            }
+            &.bed-king-cali {
+              width: 72px;
+              background-position: -648px 50%;
+            }
+            &.bed-king {
+              width: 72px;
+              background-position: -936px 50%;
+            }
+            &.bed-queen {
+              width: 72px;
+              background-position: -1008px 50%; 
+            }
+            &.bed-twin {
+              background-position: -1095px 50%;
+              width: 44px;
+            }
+            &.bed-twin-double {
+              background-position: -864px 50%;
+              width: 72px;
+            }
+            &.bed-sleeper {
+              width: 72px;
+              background-position: -792px 50%; 
+            }
+            &.bed-sleeper-double {
+              width: 72px;
+              background-position: -720px 50%; 
+            }
+            &.bed-bunk-2beds {
+              width: 72px;
+              background-position: -1152px 50%;
+            }
+            &.bed-bunk-3beds {
+              width: 72px;
+              background-position: -1224px 50%;
+            }
+            &.bed-bunk-4beds {
+              width: 72px;
+              background-position: -1296px 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.property-neighborhood {
+  @extend .section-full;
+  @extend .section-squeeze;
+  background: $gray-light image-url('background-topo.svg') no-repeat;
+  background-size: 100%;
+}
+
+.property-layout {
+  @extend .section-full;
+  @extend .section-squeeze;
+  padding: 40px 10%;
+  @media screen and (max-width: 767px) {
+    padding: 40px 20px;
+  }
+  .layout-header-wrapper {
+    position: relative;
+    border-bottom: 5px solid $gray-light;
+    background-color: #fff;
+    height: 127px;
+    padding: 0 64px 20px;
+    margin: 10px 0 0;
+    overflow: hidden;
+    @media screen and (max-width: 767px) {
+      padding: 0;
+      height: auto;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      left: 22px;
+      top: 47px;
+      bottom: 0;
+      width: 118px; 
+      height: 118px;
+      border-top: 5px solid $gray-light;
+      -webkit-transform: rotate(-57deg);
+      -moz-transform: rotate(-57deg);
+      -ms-transform: rotate(-57deg);
+      -o-transform: rotate(-57deg);
+      transform: rotate(-57deg);
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      right: 22px;
+      top: 47px;
+      bottom: 0;
+      width: 118px; 
+      height: 118px;
+      border-top: 5px solid $gray-light;
+      -webkit-transform: rotate(57deg);
+      -moz-transform: rotate(57deg);
+      -ms-transform: rotate(57deg);
+      -o-transform: rotate(57deg);
+      transform: rotate(57deg);
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+    .layout-header {
+      padding: 20px 0 0 20px;
+      margin-top: 25px;
+      border-top: 5px solid $gray-light;
+      position: relative;
+      @media screen and (max-width: 767px) {
+        border-top: none;
+        padding: 0;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: -25px;
+        right: 80px;
+        height: 61px;
+        width: 51px;
+        background: transparent image-url('layout-header-top.png') 0 0;
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+  }
+  .layout-body {
+    padding: 0 40px;
+    z-index: 10;
+    @media screen and (max-width: 767px) {
+      padding: 0;
+    }
+  }
+  .layout-floor {
+    background-color: #fff;
+    padding: 20px;
+    border: 5px solid $gray-light;
+    border-top: 0px;
+    .floor, .outdoor, .parking {
+      margin: 0 0 10px 10px;
+      font-size: 18px;
+      font-size: 1.8rem;
+      line-height: 46px;
+      color: #5b5b5b;
+      float: left;
+      width: auto;
+      position: relative;
+      padding-left: 56px;
+      &:before, &:after {
+        content: '';
+        position: absolute;
+      }
+      &:before {
+        top: 0;
+        left: 0;
+        width: 46px;
+        height: 46px;
+        margin-right: 10px;
+        background-color: $gold;
+        border-radius: 35px;
+        border: 2px solid #fff;
+        box-shadow: 1px 1px 5px #ccc, -1px -1px 5px #ccc;
+      }
+      &:after {
+        top: 23px;
+        left: 23px;
+        width: 24px;
+        height: 22px;
+        background: transparent image-url('sprite-layout.svg') no-repeat;
+        background-size: 72px 22px;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    }
+    .outdoor {
+      &:after {
+        background-position: -24px 0;
+      }
+    }
+    .parking {
+      &:after {
+        background-position: -48px 0;
+      }
+    }
+    .view-360 {
+      float: right;
+      margin: 0 0 10px 10px;
+      a {
+        display: block;
+        font-size: 18px;
+        font-size: 1.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: #5b5b5b;
+        &:hover {
+          color: $gold;
+        }
+      }
+    }
+  }
+  .room-amenities-list {
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+    li {
+      border-right: none;
+      margin: 0 6px 5px 0;
+      padding: 3px 0;
+      float: left;
+      height: 32px;
+      background: #fff image-url('sprite-amenities.svg') no-repeat;
+      background-position: 0 50%;
+      background-size: 720px 32px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    .bed-king-cali {
+      @extend .hide-text;
+      width: 38px;
+      background-position: -324px 50%;
+    }
+    .bed-king {
+      @extend .hide-text;
+      width: 38px;
+      background-position: -467px 50%;
+    }
+    .bed-queen {
+      @extend .hide-text;
+      width: 38px;
+      background-position: -503px 50%;
+    }
+    .bed-twin {
+      @extend .hide-text;
+      width: 38px;
+      background-position: -540px 50%;
+    }
+    .bed-twin-double {
+      @extend .hide-text;
+      width: 38px;
+      background-position: -432px 50%;
+    }
+    .bed-sleeper {
+      @extend .hide-text;
+      width: 38px;
+      background-position: -396px 50%;
+    }
+    .bed-sleeper-queen {
+      @extend .hide-text;
+      width: 38px;
+      background-position: -360px 50%;
+    }
+    .bed-bunk-2beds {
+      @extend .hide-text;
+      background-position: -576px 50%;
+      width: 38px;
+    }
+    .bed-bunk-3beds {
+      @extend .hide-text;
+      background-position: -612px 50%;
+      width: 38px;
+    }
+    .bed-bunk-4beds {
+      @extend .hide-text;
+      background-position: -648px 50%;
+      width: 38px;
+    }
+    .amenity-tv {
+      @extend .hide-text;
+      width: 38px;
+      background-position: 0 50%;
+    }
+    .amenity-grill {
+      @extend .hide-text;
+      width: 38px;
+      background-position: -72px 50%;
+    }
+    .amenity-toilet {
+      @extend .hide-text;
+      width: 38px;
+      background-position: -108px 50%;
+    }
+    .amenity-dining {
+      @extend .hide-text;
+      width: 38px;
+      background-position: -144px 50%;
+    }
+    .amenity-fridge {
+      @extend .hide-text;
+      width: 38px;
+      background-position: -180px 50%;
+    }
+    .amenity-tub {
+      @extend .hide-text;
+      width: 38px;
+      background-position: -216px 50%;
+    }
+    .amenity-shower {
+      @extend .hide-text;
+      width: 38px;
+      background-position: -252px 50%;
+    }
+    .amenity-sink {
+      @extend .hide-text;
+      width: 38px;
+      background-position: -288px 50%;
+    }
+    //Set up for icons that require text
+    .amenity-steps, .amenity-seating {
+      font-size: 18px;
+      font-size: 1.8rem;
+      padding: 3px 5px 3px 38px;
+      line-height: 32px;
+      position: relative;
+      background: none;
+      background-color: #fff;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 38px;
+        height: 32px;
+        background: transparent image-url('sprite-amenities.svg') no-repeat;
+        background-size: 720px 32px;
+      }
+    }
+    .amenity-steps {
+      &:before {
+        background-position: -36px 50%;
+      }
+    }
+    .amenity-seating {
+      padding-left: 32px;
+      &:before {
+        width: 30px;
+        background-position: -684px 50%;
+      }
+    }
+  }
+  // Room overlay wrapper with connected rooms
+  .room-grid {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    @media screen and (max-width: 767px) {
+      padding: 5px;
+    }
+    .room {
+      width: 100%;
+      height: auto;
+      position: relative;
+      overflow: hidden;
+      .room-title {
+        margin: 5px 0 0 0;
+        z-index: 1;
+        @media screen and (min-width: 768px) {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          margin-bottom: 0;
+          h2 {
+            color: #fff;
+          }
+        }
+      }
+      .room-background {
+        overflow: hidden;
+        width: 100%;
+        height: 100px;
+        position: relative;
+        @media screen and (min-width: 768px) {
+          height: 200px;
+        }
+        img {
+          min-width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+      }
+      .room-amenities {
+        @media screen and (min-width: 768px) {
+          position: absolute;
+          bottom: 0;
+          left: 5px;
+        }
+      }
+    }
+    .single-room {
+      float: left;
+      width: 31.33%;
+      margin: 10px 1%;
+      @media screen and (min-width: 768px) {
+        box-shadow: 1px 1px 5px #ccc, -1px -1px 5px #ccc;
+        border: 3px solid #fff;
+      }
+    }
+    .connected-2 {
+      position: relative;
+      width: 64.66%;
+      float: left;
+      margin: 10px 1%;
+      @media screen and (min-width: 768px) {
+        box-shadow: 1px 1px 5px #ccc, -1px -1px 5px #ccc;
+        border: 3px solid #fff;
+      }
+      .room {
+        margin: 0;
+        width: 50%;
+        border-right: none;
+        float: left;
+        border-right: 3px solid #fff;
+        &:last-child {
+          border-right: none;
+        }
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        width: 46px;
+        height: 46px;
+        border-radius: 35px;
+        border: 2px solid #fff;
+        background: $gold image-url('icon-door.svg') no-repeat center center;
+        background-size: 72px 22px;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        @media screen and (min-width: 768px) {
+          top: 50%;
+        }
+      }
+    }
+    .connected-3 {
+      position: relative;
+      width: 98%;
+      float: left;
+      margin: 10px 1%;
+      @media screen and (min-width: 768px) {
+        box-shadow: 1px 1px 5px #ccc, -1px -1px 5px #ccc;
+        border: 3px solid #fff;
+      }
+      .room {
+        margin: 0;
+        width: 33.33%;
+        float: left;
+        border-right: 3px solid #fff;
+        &:last-child {
+          border-right: none;
+        }
+      }
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 50px;
+        width: 46px;
+        height: 46px;
+        border-radius: 35px;
+        border: 2px solid #fff;
+        background: $gold image-url('icon-door.svg') no-repeat center center;
+        background-size: 72px 22px;
+        @media screen and (min-width: 768px) {
+          top: 50%;
+        }
+      }
+      &:before {
+        z-index: 1;
+        left: 33.33%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      &:after {
+        right: 33.33%;
+        -webkit-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+      }
+    }
+  }
+}
+
+.property-difference {
+  @extend .section-full;
+  @extend .section-squeeze;
+  background: $gray-light;
+  .difference-header {
+    color: $gold;
+  }
+  .difference-list {
+    padding-left: 0;
+    li {
+      list-style: none;
+      margin-bottom: 20px;
+      padding-left: 68px;
+      h2 {
+        color: $gold;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+      }
+      &.difference-homes, &.difference-service, &.difference-booking {
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 46px;
+          height: 46px;
+          border-radius: 35px;
+          border: 2px solid #fff;
+          box-shadow: 1px 1px 5px #ccc, -1px -1px 5px #ccc;
+          background: $gold image-url('icon-door.svg') no-repeat center center;
+          background-size: 72px 22px;
+        }
+      } 
+    }
+  }
+}
+
+.property-team {
+  @extend .section-full;
+  @extend .section-squeeze;
+  background: #000 image-url('escape-background.jpg') no-repeat;
+  background-size: 100%;
+  h1 {
+    color: $gold;
+  }
+  header {
+    dl {
+      dt {
+        color: #fff;
+      }
+      dd {
+        color: #9b9b9b;
+      }
+    }
+  }
+  p {
+    color: #fff;
+  }
+  .team {
+    figure {
+      dl {
+        text-align: center;
+        margin-top: 10px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        dt {
+          color: $gold;
+        }
+        dd {
+          color: #fff;
+          font-style: italic;
+          font-size: 14px;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+.property-reviews {
+  @extend .section-full;
+  @extend .section-squeeze;
+  h1 {
+    color: $gold;
+  }
+  article {
+    margin-bottom: 60px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    h2 {
+      color: #9a9a9a;
+      line-height: 22px;
+    }
+    .review-stars {
+      color: #ccc;
+      float: left;
+      padding: 0;
+      margin-right: 10px;
+      li {
+        display: inline-block;
+        width: 24px;
+        height: 22px;
+        @extend .hide-text;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 24px;
+          height: 22px;
+          background: transparent image-url('sprite-stars.svg') no-repeat;
+          background-size: 48px 22px;
+          background-position: -24px 0;
+        }
+        &.active {
+          &:before {
+            background-position: 0 0;
+          }
+        }
+      }
+    }
+    cite {
+      text-align: right;
+      color: #9b9b9b;
+      font-style: italic;
+      font-family: $serif;
+      float: right;
+      @media screen and (max-width: 767px) {
+        font-size: 20px;
+        font-size: 2rem;
+      }
+      &:before {
+        content: '~';
+      }
+    }
+  }
+}
+
+.property-amenities {
+  background: $gray-light;
+  h2 {
+    background-color: $gray-charcoal;
+    color: #fff;
+    padding: 6px 10px;
+    display: inline-block;
+    margin: 20px 0 10px;
+  }
+  ul {
+    @extend .box-list;
+    li {
+      a {
+        background-color: #fff;
+      }
+    }
+  }
+  .amenities-view-button {
+    text-align: center;
+    margin-top: 30px;
+    #view-amenities {
+      color: $gray-charcoal;
+      text-decoration: underline;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-size: 1.8rem;
+      padding: 6px 10px;
+      margin-top: 30px;
+      cursor: pointer;
+      &:hover {
+        color: $gold;
+      }
+      &:focus, &:active {
+        outline: 0;
+      }
+    }
+  }
+  .all-amenities {
+    margin-top: 20px;
+  }
+}
+
+.property-what {
+  article {
+    padding-left: 140px;
+    min-height: 142px;
+    position: relative;
+    @media screen and (max-width: 479px) {
+      padding-left: 0;
+    }
+    &.what-love, &.what-know, &.what-expect {
+      &:before, &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        @media screen and (max-width: 479px) {
+          display: none;
+        }
+      }
+      &:before {
+        top: 0;
+        left: 0;
+        width: 120px;
+        height: 120px;
+        background-color: $gray-charcoal;
+        border-radius: 120px;
+      }
+      &:after {
+        top: 60px;
+        left: 60px;
+        width: 72px;
+        height: 64px;
+        background: transparent image-url('what-sprite.svg') no-repeat 0 0;
+        background-size: 142px 64px;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    }
+    &.what-love {
+      &:after {
+        background-position: 0 0;
+      }
+    }
+    &.what-know {
+      &:after {
+        background-position: -72px 0;
+      }
+    }
+    &.what-expect {
+      &:after {
+        background-position: -72px 0;
+      }
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    ul {
+      padding-left: 0;
+      @media screen and (max-width: 479px) {
+        margin-bottom: 20px;
+      }
+      li {
+        margin: 0 0 10px 20px;
+        list-style: none;
+        font-family: $serif;
+        @media screen and (max-width: 767px) {
+          font: normal 400 20px/20px $serif;
+          font-size: 2rem;
+        }
+        &:before {
+          content: '\2022';
+          color: $gold;
+          float: left;
+          margin-left: -20px;
+        }
+      }
+    }
+  }
+}
+
+.property-particulars {
+  background-color: #000;
+  color: #fff;
+  padding: 0;
+  background: image-url('property-hero_large.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .particulars-wrapper {
+    @extend .section-full.section-squeeze;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    h1 {
+      color: #fff;
+    }
+    article {
+      position: relative;
+      min-height: 160px;
+      padding-left: 140px;
+      @media screen and (max-width: 479px) {
+        margin-top: 20px;
+        min-height: 0px;
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+      @media screen and (max-width: 479px) {
+        padding-left: 0;
+      }
+      h2 {
+        color: #fff;
+        margin-bottom: 10px;
+      }
+      p {
+        color: #fff;
+      }
+      ul {
+        padding-left: 20px;
+        li {
+          font: normal 400 14px/28px $serif;
+          font-size: 1.4rem;
+          @media screen and (max-width: 767px) {
+            font: normal 400 20px/20px $serif;
+            font-size: 2rem;
+          }
+        }
+      }
+      &:before, &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        @media screen and (max-width: 479px) {
+          display: none;
+        }
+      }
+      &:before {
+        top: 0;
+        left: 0;
+        width: 120px;
+        height: 120px;
+        border: 4px solid #fff;
+        border-radius: 120px;
+      }
+      &:after {
+        top: 60px;
+        left: 60px;
+        width: 72px;
+        height: 64px;
+        background: transparent image-url('sprite-particulars.svg') no-repeat;
+        background-size: 360px 64px;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      &.particulars-checkin {
+        &:after {
+          background-position: 0 0;
+        }
+      }
+      &.particulars-there {
+        &:after {
+          background-position: -72px 0;
+        }
+      }
+      &.particulars-around {
+        &:after {
+          background-position: -144px 0;
+        }
+      }
+      &.particulars-cancellation {
+        &:after {
+          background-position: -216px 0;
+        }
+      }
+      &.particulars-rules {
+        &:after {
+          background-position: -288px 0;
+        }
+      }
+    }
+  }
+}

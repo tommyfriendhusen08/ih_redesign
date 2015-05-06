@@ -1,0 +1,177 @@
+// Search Page Specific CSS
+
+.neighborhood-section {
+  @extend .section-full;
+  @extend .no-padding;
+  .neighborhood-title {
+    background-color: #1d1d1d;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 0px;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: transparent image-url('background-topo.svg') no-repeat;
+      background-size: 100%;
+      opacity: 0.2;
+    }
+    dl {
+      text-align: center;
+      dt, dd {
+        font-size: 45px;
+        font-size: 4.5rem;
+        font-family: $serif;
+        text-transform: capitalize;
+      }
+      dt {
+        color: #fff;
+        font-variant: small-caps;
+      }
+    }
+  }
+  article {
+    padding: 20px 40px;
+    overflow: hidden;
+    &:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+    .search-property-hero {
+      position: relative;
+      header {
+        @media screen and (max-width: 767px) {
+          margin-bottom: 10px;
+        }
+        dl {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          background-color: #fff;
+          padding: 5px 15px;
+          @media screen and (max-width: 767px) {
+            position: relative;
+            left: auto;
+            top: auto;
+            padding: 0;
+            background-color: transparent;
+            dt, dd {
+              font-size: 2.8rem;
+            }
+          }
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .search-property-details {
+      margin-top: 10px;
+      .search-rates, .search-beds {
+        float: left;
+        width: 50%;
+        h2 {
+          margin-bottom: 10px;
+        }
+      }
+      .search-rates {
+        @media screen and (max-width: 479px) {
+          width: 100%;
+        }
+        h2 {
+          color: $gold;
+          &:before {
+            content: 'Nightly Rates Starting At';
+            text-transform: uppercase;
+            color: $gray-charcoal;
+          }
+        }
+      }
+      .search-beds {
+        @media screen and (max-width: 479px) {
+          display: none;
+        }
+        text-align: right;
+        .search-bed-list {
+          float: right;
+          overflow: hidden;
+          padding: 0;
+          li {
+            box-sizing: content-box;
+            float: left;
+            height: 30px;
+            list-style: none;
+            position: relative;
+            width: auto;
+            padding: 0 10px;
+            overflow: hidden;
+            @extend .hide-text;
+            border-right: 1px solid #000;
+            &:last-of-type {
+              border-right: none;
+              padding: 0 0 0 10px;
+            }
+            &:before {
+              content: '';
+              position: absolute;
+              left: 10px;
+              top: 50%;
+              background: image-url('sprite-beds.svg') no-repeat;
+              background-size: 317px 22px;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+            }
+            &.beds-1 {
+              width: 20px;
+              &:before {
+                width: 20px;
+                height: 22px;
+                background-position: -1px;
+              }
+            }
+            &.beds-2 {
+              width: 39px;
+              &:before {
+                width: 39px;
+                height: 22px;
+                background-position: -25px;
+              }
+            }
+            &.beds-3 {
+              width: 59px;
+              &:before {
+                width: 59px;
+                height: 22px;
+                background-position: -69px;
+              }
+            }
+            &.beds-4 {
+              width: 79px;
+              &:before {
+                width: 79px;
+                height: 22px;
+                background-position: -133px;
+              }
+            }
+            &.beds-5 {
+              width: 100px;
+              &:before {
+                width: 100px;
+                height: 22px;
+                background-position: -216px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.search-teaser {
+  @extend .section-teaser;
+  background-color: #f2f2f2;
+}

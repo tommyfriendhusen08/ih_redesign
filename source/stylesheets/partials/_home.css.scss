@@ -1,0 +1,178 @@
+// Home Page Specific CSS
+
+.hero-home {
+  .hero-photo {
+    height: 500px;
+    @media screen and (max-width: 479px) {
+      height: 340px;
+    }
+  }
+}
+
+.hero-home-cta {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 90%;
+  h1 {
+    color: #fff;
+    font-family: $serif;
+    font-size: 48px;
+    font-size: 4.8rem;
+    line-height: 60px;
+    text-align: center;
+    font-variant: small-caps;
+    @media screen and (max-width: 767px) {
+      line-height: 40px;
+    }
+  }
+  ul {
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+    li {
+      display: inline-block;
+      margin: 0 10px 20px 0;
+      a {
+        display: block;
+        background-color: #fff;
+        padding: 4px 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        .state {
+          color: $gold;
+        }
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.home-scroll {
+  @extend .scroll-for-more;
+  background-color: $gray-light;
+}
+
+.home-getaways {
+  @extend .section-teaser;
+  background-color: $gray-light;
+  padding-top: 80px;
+  @media screen and (max-width: 479px) {
+    padding-top: 0;
+  }
+}
+
+.home-reservations {
+  @extend .section-teaser;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  h1 {
+    margin-top: 20px;
+  }
+}
+
+.home-staff {
+  @extend .section-teaser;
+  background: $gray-light image-url('background-topo.svg');
+  background-size: 100%;
+  padding: 60px 0 20px;
+  margin-bottom: 20px;
+  p {
+    padding: 0 28%;
+    @media screen and (max-width: 767px) {
+      padding: 0 18%;
+    }
+    @media screen and (max-width: 479px) {
+      padding: 0 20px;
+    }
+  }
+  .home-carousel {
+    width: 110%;
+    transform: translateX(-5%);
+    .item {
+      padding: 0 10px;
+      img {
+        &:first-of-type {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    @media screen and (max-width: 479px) {
+      width: 100%;
+      transform: translateX(0%);
+      .item {
+        padding: 0;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.home-service {
+  @extend .section-teaser;
+  .service-clock {
+    position: relative;
+    padding-left: 180px;
+    h1 {
+      text-align: left;
+      &:before {
+        left: 0;
+      }
+    }
+    p {
+      padding: 0;
+      text-align: left;
+    }
+    @media screen and (max-width: 479px) {
+      padding-left: 0;
+      h1 {
+        text-align: center;
+        &:before {
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+        }
+      }
+      p {
+        text-align: center;
+      }
+    }
+    &:before {
+      content: '';
+      background: transparent image-url('home-clock.svg');
+      width: 140px;
+      height: 140px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      @media screen and (max-width: 479px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.home-handpicked {
+  @extend .hero-section;
+  .hero-photo {
+    height: 600px;
+    @media screen and (max-width: 767px) {
+      height: 400px;
+    }
+  }
+}
+
+.home-partner {
+  @extend .section-teaser;
+}

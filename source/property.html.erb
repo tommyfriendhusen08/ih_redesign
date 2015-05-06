@@ -1,0 +1,1096 @@
+<section class="hero-section">
+
+  <div class="hero-photo">
+
+    <div class="photo-background">
+      <picture>
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source srcset="/images/property-hero_large.jpg" srcset="/images/property-hero_large.jpg" media="(min-width: 991px)">
+        <source srcset="/images/property-hero_medium.jpg" media="(min-width: 480px)">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="/images/property-hero_small.jpg" alt="">
+      </picture>
+    </div>
+
+  </div>
+
+  <div class="slideshow-nav">
+    <%= image_tag('camera-icon.svg', :class => "btn-slide", :data => { :slide => 'slideshow' }) %>
+  </div>
+
+</section>
+
+<section class="property-details">
+  <header>
+    <h1>The Home</h1>
+
+    <dl>
+      <dt>
+        Montecito Beach Estate
+      </dt>
+      <dd>
+        A West Coast Camelot
+      </dd>
+    </dl>
+
+    <ul class="details-list">
+      <li class="details-people">Sleeps 10</li>
+      <li class="details-bedrooms">5 Bedrooms</li>
+      <li class="details-baths">5.5 Baths</li>
+      <li class="details-size">7000 FT<sup>2<sup></li>
+      <li class="details-parking">4 Parking Spaces</li>
+      <li class="details-type">Home</li>
+    </ul>
+  </header>
+
+  <div class="details-description">
+    <p>
+      This is where the Kennedys might have stayed if they had summered on the West Coast. Located in the prestigious gated community of Sea Meadow in Montecito, this glorious 7000 square foot French Normandy style home sits amidst beautifully landscaped grounds and tropical foliage. We imagine Jack and Bobby playing touch football on the beach, which is located mere steps from the home. Jackie would love the home's beautiful furnishings, fine arts and antiques. And the entire Kennedy clan would welcome the tranquility of this rare beachfront home with 5 bedrooms, 5.5 baths, and lovely ocean, island and coastline views. <a href="#">Read More</a>
+    </p>
+  </div>
+  <div class="details-bedding">
+    <h2>
+      Bedding by Room
+    </h2>
+    <ul class="details-beds-list">
+      <li>
+        <ul>
+          <li class="bed-king">King</li>
+        </ul>
+        Master Bedroom
+      </li>
+      <li>
+        <ul>
+          <li class="bed-queen">Queen</li>
+          <li class="bed-twin">Twin</li>
+          <li class="bed-twin">Twin</li>
+        </ul>
+        Guest Bedroom #2
+      </li>
+      <li>
+        <ul>
+          <li class="bed-king-cali">Cali King</li>
+          <li class="bed-sleeper-double">Sleeper Double</li>
+          <li class="bed-sleeper">Sleeper</li>
+          <li class="bed-twin-double">Twin Double</li>
+        </ul>
+        Guest Bedroom #3
+      </li>
+      <li>
+        <ul>
+          <li class="bed-bunk-2beds">Bunks 2 Beds</li>
+          <li class="bed-bunk-3beds">Bunks 3 Beds</li>
+          <li class="bed-bunk-4beds">Bunks 4 Beds</li>
+        </ul>
+        Guest Bedroom #3
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="property-neighborhood">
+  <header>
+    <h1>The Neighborhood</h1>
+
+    <dl>
+      <dt>
+        Montecito Beach
+      </dt>
+      <dd>
+        Santa Barbara California
+      </dd>
+    </dl>
+  </header>
+
+  <p>
+    In spite of its age, Santa Barbara feels timeless. The site of Spain's 1536 South American settlement, San Telmo survived revolutions, epidemics, renewal projects, and protests. Since then, its character has only continued to enhance the core of Buenos Aires. <a href="#">learn more</a>
+  </p>
+
+  <div class="property-map-wrapper">
+    <div id="map-canvas"></div>
+    <div class="location-info-wrapper" style="display: none;">
+      <div id="location-close-btn">X</div>
+      <div class="map-location" data-location="cadiz" style="display: none;">
+        <h1>Cadiz</h1>
+        <div class="location-tab tab-take">
+          <p>Italian &amp; Spanish Seaside cuisine, harbor-fresh Seafood, and market-fresh produce are the staples of Cadiz. Located in Historic Downtown Santa Barbara, with a beautifully renovated interior, and State Street facing patio, you will feel like you were transported to the Mediterranean Sea when you dine with us. The cuisine is influenced by the coastal regions of Italy &amp; Spain, offering seafood, small bites, salads, flatbreads, pastas, and entrees. The menu is seasonally driven, and all produce is bought from the local Farmer's Market right outside our front door. Our wonderful selection of seafood dishes are comprised of local, harbor fresh seafood, purchased daily. Our mixology bar offers seasonal, market-fresh cocktails, and on weekend nights Cadiz transforms into an upscale European style lounge/nightclub at 10:30 until 2am.</p>
+        </div>
+        <div class="location-tab tab-address">
+          <p>Cadiz Address</p>
+        </div>
+        <div class="location-tab tab-contact">
+          <p>Cadiz Contact</p>
+        </div>
+      </div>
+      <div class="map-location" data-location="toma" style="display: none;">
+        <h1>Toma Restaurant and Bar</h1>
+        <div class="location-tab tab-take">
+          <p>Toma Restaurant and bar is in the former location of Emilio’s Restaurant, along Cabrillo Boulevard. The restaurant and historic building retains an old world charm, inside and out, that has been at this location on the Santa Barbara waterfront for over 80 years.</p>
+        </div>
+        <div class="location-tab tab-address">
+          <p>Toma Address</p>
+        </div>
+        <div class="location-tab tab-contact">
+          <p>Toma Contact</p>
+        </div>
+      </div>
+      <nav class="location-nav">
+        <ul>
+          <li class="location-toggle" data-toggle="take">Our Take</li>
+          <li class="location-toggle" data-toggle="address">Address</li>
+          <li class="location-toggle" data-toggle="contact">Contact</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+</section>
+
+<section class="property-layout">
+  <header class="layout-header-wrapper">
+    <h1 class="layout-header">
+      The Layout
+    </h1>
+  </header>
+
+  <div class="layout-body">
+    <div class="layout-floor">
+      <h2 class="floor">
+        3rd Floor
+      </h2>
+
+      <div class="view-360">
+        <a href="#">
+          View 360&deg;
+        </a>
+      </div>
+
+      <div class="room-grid">
+        <div class="single-room">
+          <div class="room">
+            <div class="room-background">
+              <%= image_tag('property-living.jpg') %>
+            </div>
+            <div class="room-title">
+              <h2>
+                Living Room
+              </h2>
+            </div>
+            <div class="room-amenities">
+              <ul class="room-amenities-list">
+                <li class="bed-king-cali">
+                  <span>King</span>
+                </li>
+                <li class="bed-twin">
+                  Twin
+                </li>
+                <li class="amenity-tv">
+                  TV
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="single-room">
+          <div class="room">
+            <div class="room-background">
+              <%= image_tag('property-living.jpg') %>
+            </div>
+            <div class="room-title">
+              <h2>
+                Living Room
+              </h2>
+            </div>
+            <div class="room-amenities">
+              <ul class="room-amenities-list">
+                <li class="bed-sleeper-queen">
+                  Sleeper Queen
+                </li>
+                <li class="bed-sleeper">
+                  Sleeper
+                </li>
+                <li class="amenity-tv">
+                  TV
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="single-room">
+          <div class="room">
+            <div class="room-background">
+              <%= image_tag('property-living.jpg') %>
+            </div>
+            <div class="room-title">
+              <h2>
+                Living Room
+              </h2>
+            </div>
+            <div class="room-amenities">
+              <ul class="room-amenities-list">
+                <li class="bed-twin-double">
+                  Twin Double
+                </li>
+                <li class="bed-queen">
+                  Queen
+                </li>
+                <li class="amenity-tv">
+                  TV
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout-floor">
+      <h2 class="floor">
+        2nd Floor
+      </h2>
+
+      <div class="view-360">
+        <a href="#">
+          View 360&deg;
+        </a>
+      </div>
+
+      <div class="room-grid">
+        <div class="connected-3">
+          <div class="room">
+            <div class="room-background">
+                <%= image_tag('property-guest-bath.jpg') %>
+            </div>
+            <div class="room-title">
+              <h2>Guest Bedroom #2</h2>
+            </div>
+            <div class="room-amenities">
+              <ul class="room-amenities-list">
+                <li class="bed-bunk-2beds">
+                  Bunk 2 Beds
+                </li>
+                <li class="bed-bunk-3beds">
+                  Bunk 3 Beds
+                </li>
+                <li class="bed-bunk-4beds">
+                  Bunk 4 Beds
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="room">
+            <div class="room-background">
+              <%= image_tag('property-guest-bath.jpg') %>
+            </div>
+            <div class="room-title">
+              <h2>Shared Bath</h2>
+            </div>
+          </div>
+          <div class="room">
+            <div class="room-background">
+              <%= image_tag('property-guest-bath.jpg') %>
+            </div>
+            <div class="room-title">
+              <h2>Guest Bedroom #3</h2>
+            </div>
+          </div>
+        </div>
+        <div class="single-room">
+          <div class="room">
+            <div class="room-background">
+              <%= image_tag('property-guest.jpg') %>
+            </div>
+            <div class="room-title">
+              <h2>Guest Bedroom #4</h2>
+            </div>
+            <div class="room-amenities">
+              <ul class="room-amenities-list">
+                <li class="bed-king">
+                  King
+                </li>
+                <li class="bed-twin">
+                  Twin
+                </li>
+                <li class="bed-twin">
+                  Twin
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="connected-2">
+          <div class="room">
+            <div class="room-background">
+              <%= image_tag('property-guest.jpg') %>
+            </div>
+            <div class="room-title">
+              <h2>Guest Bedroom #5</h2>
+            </div>
+            <div class="room-amenities">
+              <ul class="room-amenities-list">
+                <li class="bed-twin">
+                  Full
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="room">
+            <div class="room-background">
+              <%= image_tag('property-living.jpg') %>
+            </div>
+            <div class="room-title">
+              <h2>Living Room</h2>
+            </div>
+            <div class="room-amenities">
+              <ul class="room-amenities-list">
+                <li class="bed-queen">
+                  Queen
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout-floor">
+      <h2 class="outdoor">
+        Outdoor areas
+      </h2>
+
+      <div class="view-360">
+        <a href="#">
+          View 360&deg;
+        </a>
+      </div>
+
+      <div class="room-grid">
+        <div class="single-room">
+          <div class="room">
+            <div class="room-background">
+              <%= image_tag('property-kitchen.jpg') %>
+            </div>
+            <div class="room-title">
+              <h2>Patio</h2>
+            </div>
+            <div class="room-amenities">
+              <ul class="room-amenities-list">
+                <li class="amenity-steps">
+                  x30
+                </li>
+                <li class="amenity-seating">
+                  x8
+                </li>
+                <li class="amenity-grill">
+                  Grill
+                </li>
+                <li class="amenity-toilet">
+                  Toilet
+                </li>
+                <li class="amenity-dining">
+                  Dining
+                </li>
+                <li class="amenity-fridge">
+                  Fridge
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="single-room">
+          <div class="room">
+            <div class="room-background">
+              <%= image_tag('property-guest-bath.jpg') %>
+            </div>
+            <div class="room-title">
+              <h2>Beach Access</h2>
+            </div>
+            <div class="room-amenities">
+              <ul class="room-amenities-list">
+                <li class="amenity-tub">
+                  Tub
+                </li>
+                <li class="amenity-shower">
+                  Shower
+                </li>
+                <li class="amenity-sink">
+                  Sink
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="single-room">
+          <div class="room">
+            <div class="room-background">
+              <%= image_tag('property-living.jpg') %>
+            </div>
+            <div class="room-title">
+              <h2>Backyard</h2>
+            </div>
+            <div class="room-amenities">
+              <ul class="room-amenities-list">
+                <li class="bed-queen">
+                  Queen
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout-floor">
+      <h2 class="parking">
+        Parking
+      </h2>
+
+      <div class="room-grid">
+        <div class="single-room">
+          <div class="room">
+            <div class="room-background">
+              <%= image_tag('property-kitchen.jpg') %>
+            </div>
+            <div class="room-title">
+              <h2>Driveway</h2>
+            </div>
+            <div class="room-amenities">
+              <ul class="room-amenities-list">
+                <li class="bed-king">
+                  King
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="single-room">
+          <div class="room">
+            <div class="room-background">
+              <%= image_tag('property-guest-bath.jpg') %>
+            </div>
+            <div class="room-title">
+              <h2>Garage</h2>
+            </div>
+            <div class="room-amenities">
+              <ul class="room-amenities-list">
+                <li class="bed-king">
+                  King
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="property-difference">
+  <header>
+    <h1 class="difference-header">
+      The InvitedHome Difference
+    </h1>
+  </header>
+  <ul class="difference-list">
+    <li class="difference-homes">
+      <h2>Handpicked Homes</h2>
+      <p>We're proud of the homes that represent IH. We only accept the best and showcase them with clear photography and accurate descriptions to make your decision.</p>
+    </li>
+    <li class="difference-homes">
+      <h2>24/7 Service</h2>
+      <p>We offer dedicated guest services to answer any questions you have during your stay. Like, "what's the best way to get into a hammock?" Or, "where can I find a turkey baster?"</p>
+    </li>
+    <li class="difference-booking">
+      <h2>Easy Peasy Booking</h2>
+      <p>We've designed our online booking to be as simple as booking a hotel room&#8212;except you get an amazing home all to yourself. Need help finding the perfect place? Just call. We're here 24/7.</p>
+    </li>
+  </ul>
+</section>
+
+<section class="property-team">
+  <header>
+    <h1>
+      Your Escape Squad
+    </h1>
+
+    <dl>
+      <dt>
+        Meet The People That'll Be Taking Care of You
+      </dt>
+      <dd>
+        Santa Barbara Team
+      </dd>
+    </dl>
+  </header>
+
+  <p>
+    InvitedHome provides cleaning, repair and inspection services for every home in every destination. That means you can expect a consistently great experience no matter where you go.
+  </p>
+  <div class="row team">
+    <figure class="col-sm-3 col-xs-6">
+      <div class="mug-circle">
+        <%= image_tag('team-01.jpg') %>
+      </div>
+      <figcaption>
+        <dl>
+          <dt>
+            Leah
+          </dt>
+          <dd>
+            General Manager
+          </dd>
+        </dl>
+      </figcaption>
+    </figure>
+
+    <figure class="col-sm-3 col-xs-6">
+      <div class="mug-circle">
+        <%= image_tag('team-02.jpg') %>
+      </div>
+      <figcaption>
+        <dl>
+          <dt>
+            Charlie
+          </dt>
+          <dd>
+            Home Maintanence
+          </dd>
+        </dl>
+      </figcaption>
+    </figure>
+
+    <figure class="col-sm-3 col-xs-6">
+      <div class="mug-circle">
+        <%= image_tag('team-03.jpg') %>
+      </div>
+      <figcaption>
+        <dl>
+          <dt>
+            Lilly
+          </dt>
+          <dd>
+            Vacation Consultant
+          </dd>
+        </dl>
+      </figcaption>
+    </figure>
+
+    <figure class="col-sm-3 col-xs-6">
+      <div class="mug-circle">
+        <%= image_tag('team-04.jpg') %>
+      </div>
+      <figcaption>
+        <dl>
+          <dt>
+            Jerome
+          </dt>
+          <dd>
+            Vacation Consultant
+          </dd>
+        </dl>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="property-reviews">
+  <header>
+    <h1>
+      Guest Reviews
+    </h1>
+  </header>
+  
+  <article class="review">
+    <header>
+      <ul class="review-stars">
+        <li class="active">Star</li>
+        <li class="active">Star</li>
+        <li class="active">Star</li>
+        <li class="active">Star</li>
+        <li>Star</li>
+      </ul>
+
+      <h2>
+        Girls Weekend Getaway
+      </h2>
+    </header>
+
+    <blockquote>
+      <p>We recently just stayed at this home to celebrate my sisters upcoming nuptuals, we had family and friends and enjoyed a low-key weekend of outdoor fun and loved staying in this home. It was exactly as pictured and contained all the amenities you need. The home was clean and organized. I would definitely recommend this home. The only negative feedback I have is that the hot-tub water was scalding hot and we were not able to relax and take advantage of it.</p>
+
+      <cite>
+        Sally Smith, June 14, 2012
+      </cite>
+    </blockquote>
+  </article>
+
+  <article class="review">
+    <header>
+      <ul class="review-stars">
+        <li class="active"><i class="fa fa-star"></i></li>
+        <li class="active"><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+      </ul>
+
+      <h2>
+        I Love Santa Barbara!
+      </h2>
+    </header>
+
+    <blockquote>
+      <p>I've stayed in a lot of cabins in the Tahoe area, but this cabin by far is my favorite. The location is prefect, you have access to ski resorts, downtown, and Lake Tahoe in minutes. All of the appliances are up to date and the cabin itself feels like a home away from home.</p>
+
+      <cite>
+        John Smith, February 9, 2015
+      </cite>
+    </blockquote>
+  </article>
+
+  <article class="review">
+    <header>
+      <ul class="review-stars">
+        <li class="active"><i class="fa fa-star"></i></li>
+        <li class="active"><i class="fa fa-star"></i></li>
+        <li class="active"><i class="fa fa-star"></i></li>
+        <li class="active"><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+      </ul>
+
+      <h2>
+        Great House, Amazing Location
+      </h2>
+    </header>
+
+    <blockquote>
+      <p>This house was amazing. The house was in great condition. We bbq-ed steaks and chilled in the largest hot tub with jets. Which one day got overheated and turned off, we called the maintenance number and within 15 minutes, there was a man there to fix it. Great service and couldn't ask for anything more.</p>
+
+      <cite>
+        Suzie Que, January 21, 2014
+      </cite>
+    </blockquote>
+  </article>
+</section>
+
+<section class="section-full section-squeeze property-amenities">
+  
+  <header>
+    <h1>
+      The Amenities
+    </h1>
+
+    <dl>
+      <dt>
+        Everything &amp; the Kitchen Sink
+      </dt>
+      <dd>
+        Tellus Quis Efficitur Aliquet
+      </dd>
+    </dl>
+  </header>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ex nec mi luctus ultricies. Sed tincidunt ante quis ligula finibus pulvinar. Vivamus sit amet enim libero. Donec semper nisl a sapien blandit aliquet. Vestibulum rutrum, purus quis sollicitudin rhoncus, tortor odio finibus nulla, sit amet facilisis lectus ipsum eu nunc.
+  </p>
+
+  <h2>
+    Standard Amenities
+  </h2>
+
+  <ul>
+    <li>
+      <a href="#">
+        Free Wifi
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Linens &amp; Bath Towels
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Concierge service
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        On call maintenance
+      </a>
+    </li>
+  </ul>
+
+  <h2>
+    Top Amenities
+  </h2>
+
+  <ul>
+    <li>
+      <a href="#">
+        Outdoor Grill
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Central Heating
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Firewood Provided
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Free Shuttle
+      </a>
+    </li>
+  </ul>
+  
+  <div class="amenities-view-button">
+    <a id="view-amenities">
+      View all Amenities
+    </a>
+  </div>
+
+  <div class="all-amenities" style="display: none;">
+    <ul>
+      <li>
+        <a href="#">
+          Free Wifi
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Linens &amp; Bath Towels
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Local Team
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          On call maintenance
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Concierge service
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Washing Machine
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Central Heating
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Firewood Provided
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Gas Fireplace
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Wood Burning Fireplace
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Free Shuttle
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Ski In / Ski Out
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Garage Space
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Outdoor Grill
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Catering Available
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section-full section-squeeze property-what">
+  <header>
+    <h1>
+      What You Should Know
+    </h1>
+  </header>
+  <article class="what-love">
+    <h2>
+      What We love
+    </h2>
+    <ul>
+      <li>Relaxing on the patio watching the surfers, sailboats, and sea life drift by</li>
+      <li>Making good use of the pool, spa and tennis court in the community</li>
+      <li>Talking long walks on the beach, then cozying up by the fireplace</li>
+    </ul>
+  </article>
+  <article class="what-know">
+    <h2>
+      What to know
+    </h2>
+    <ul>
+      <li>Only one of the bedrooms is located downstairs and is handicap accessible.</li>
+      <li>Hammond's Beach is a public beach and one of Santa Barbara's most beautiful places to stroll.</li>
+    </ul>
+  </article>
+  <article class="what-expect">
+    <h2>
+      What to expect after booking
+    </h2>
+    <ul>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+    </ul>
+  </article>
+</section>
+
+<section class="section-full property-particulars">
+  <div class="particulars-wrapper">
+    <header>
+      <h1>
+        The Particulars
+      </h1>
+    </header>
+    <article class="particulars-checkin">
+      <h2>
+        Checkin is at 4:00PM &amp; CHECKOUT 11:00AM
+      </h2>
+      <p>
+        It may be possible to grant an earlier check in or late checkout depending on the booking and maintenance schedule. Early checkin and late checkouts cannot be guaranteed until 24 hours prior to checkin or out date.
+      </p>
+    </article>
+    <article class="particulars-there">
+      <h2>
+        Getting There
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mauris tellus, porttitor quis lacinia quis, placerat dignissim nibh. Praesent vehicula luctus volutpat. Nullam cursus consectetur finibus. Vestibulum id nunc ante. Nulla facilisi. Suspendisse convallis erat in elit faucibus tincidunt. Donec ut fermentum eros, quis feugiat lectus.
+      </p>
+    </article>
+    <article class="particulars-around">
+      <h2>
+        Getting Around
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mauris tellus, porttitor quis lacinia quis, placerat dignissim nibh. Praesent vehicula luctus volutpat. Nullam cursus consectetur finibus. Vestibulum id nunc ante. Nulla facilisi. Suspendisse convallis erat in elit faucibus tincidunt. Donec ut fermentum eros, quis feugiat lectus. Suspendisse convallis erat in elit faucibus tincidunt. Donec ut fermentum eros, quis feugiat lectus.
+      </p>
+    </article>
+    <article class="particulars-cancellation">
+      <h2>Cancellation Policy</h2>
+
+      <ul>
+        <li>Full refund if you cancel 30 days prior to arrival</li>
+        <li>Cancellation fee = 50% of nightly charges until 14 days prior to arrival</li>
+        <li>Cancellation fee = 100% of nightly charges less than 14 days prior to arrival</li>
+      </ul>
+    </article>
+
+    <article class="particulars-rules">
+      <h2>Rules to stay by</h2>
+
+      <ul>
+        <li>Everyone must be over 25 or accompanied by a parent or legal guardian</li>
+        <li>Smoking is strictly prohibited at this property</li>
+        <li>Pets are not allowed at this property under any circumstances</li>
+        <li>The maximum occupancy is 10 people</li>
+        <li>The maximum number of cars at the property is 3</li>
+        <li>A credit card pre-authorization of $350.00 is required at the time of check in as the damage deposit (not included in above charges)</li>
+        <li>This property cannot be used for weddings, parties or organized events.</li>
+        <li>A credit card charge is required for the secuirty deposit, and pet deposit if applicable, at the time of checkin for stays</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="explore-section">
+  <header>
+    <dl>
+      <dt>
+        Explore
+      </dt>
+      <dd>
+        Santa Barbara
+      </dd>
+    </dl>
+  </header>
+
+  <div class="standard-grid">
+
+    <div class="cell-3">
+      <a href="#">
+        <div class="cell-background">
+          <%= image_tag('explore-mock.jpg') %>
+        </div>
+        <div class="cell-content">
+          <div class="cell-header">
+            <h2>
+              Where to Eat
+            </h2>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="cell-3">
+      <a href="#">
+        <div class="cell-background">
+          <%= image_tag('explore-powder.jpg') %>
+        </div>
+
+        <div class="cell-content">
+          <div class="cell-header">
+            <h2>
+              What to do
+            </h2>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="cell-3">
+      <a href="#">
+        <div class="cell-background">
+          <%= image_tag('explore-dining.jpg') %>
+        </div>
+
+        <div class="cell-content">
+          <div class="cell-header">
+            <h2>
+              Where to stay
+            </h2>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="more-homes-section">
+  <header>
+    <dl>
+      <dt>
+        More InvitedHomes
+      </dt>
+      <dd>
+        Santa Barbara
+      </dd>
+    </dl>
+  </header>
+
+    <div class="standard-grid">
+
+      <div class="cell-3">
+        <a href="#">
+          <div class="cell-background">
+            <%= image_tag('home-bear-mountain.jpg') %>
+          </div>
+          <div class="cell-content">
+            <div class="cell-header">
+              <h2>
+                Sunset Heights
+              </h2>
+            </div>
+          </div>
+          <div class="more-price">
+            <p>
+              ~ $260
+            </p>
+          </div>
+          <div class="more-amenities">
+            <ul class="details-list">
+              <li class="details-people">8</li>
+              <li class="details-bedrooms">9</li>
+              <li class="details-baths">8.5</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+
+      <div class="cell-3">
+        <a href="#">
+          <div class="cell-background">
+            <%= image_tag('home-del-norte.jpg') %>
+          </div>
+
+          <div class="cell-content">
+            <div class="cell-header">
+              <h2>
+                Creekside Haven
+              </h2>
+            </div>
+          </div>
+          <div class="more-price">
+            <p>
+              ~ $260
+            </p>
+          </div>
+          <div class="more-amenities">
+            <ul class="details-list">
+              <li class="details-people">8</li>
+              <li class="details-bedrooms">9</li>
+              <li class="details-baths">8.5</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+
+      <div class="cell-3">
+        <a href="#">
+          <div class="cell-background">
+            <%= image_tag('home-tahoe-jazz.jpg') %>
+          </div>
+
+          <div class="cell-content">
+            <div class="cell-header">
+              <h2>
+                Vista Del Oceana
+              </h2>
+            </div>
+          </div>
+          <div class="more-price">
+            <p>
+              ~ $260
+            </p>
+          </div>
+          <div class="more-amenities">
+            <ul class="details-list">
+              <li class="details-people">8</li>
+              <li class="details-bedrooms">9</li>
+              <li class="details-baths">8.5</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+    </div>
+</section>
