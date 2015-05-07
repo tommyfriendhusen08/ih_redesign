@@ -165,6 +165,44 @@ ul {
   }
 }
 
+.header-list {
+  dl {
+    dt, dd {
+      display: inline-block;
+      @include font-size(1.8);
+      text-transform: uppercase;
+      color: $gray-charcoal;
+      letter-spacing: 1px;
+    }
+    dd {
+      color: $gold;
+      font-style: italic;
+      &:before {
+        content: '~';
+      }
+    }
+  }
+}
+
+.header-list-large {
+  dl {
+    margin-left: 20px;
+    dt, dd {
+      @include font-size(4.8);
+      font-family: $serif;
+      text-transform: capitalize;
+    }
+    dt {
+      font-variant: small-caps;
+    }
+    dd {
+      &:before {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
 /* Images
 ------------------------------------------*/
 
@@ -846,9 +884,7 @@ main {
     @media screen and (max-width: 479px) {
       @include font-size(2.8);
     }
-    text-transform: uppercase;
     color: $gray-charcoal;
-    letter-spacing: 1px;
   }
   h3 {
     margin-top: 10px;
@@ -856,22 +892,7 @@ main {
   }
   header {
     margin-bottom: 20px;
-    dl {
-      dt, dd {
-        display: inline-block;
-        @include font-size(1.8);
-        text-transform: uppercase;
-        color: $gray-charcoal;
-        letter-spacing: 1px;
-      }
-      dd {
-        color: $gold;
-        font-style: italic;
-        &:before {
-          content: '~';
-        }
-      }
-    }
+    @extend .header-list;
   }
   &.no-padding {
     padding: 0;
@@ -892,22 +913,7 @@ main {
     padding: 0;
   }
   header {
-    dl {
-      margin-left: 20px;
-      dt, dd {
-        @include font-size(4.8);
-        font-family: $serif;
-        text-transform: capitalize;
-      }
-      dt {
-        font-variant: small-caps;
-      }
-      dd {
-        &:before {
-          margin-left: 5px;
-        }
-      }
-    }
+    @extend .header-list-large;
   }
 }
   

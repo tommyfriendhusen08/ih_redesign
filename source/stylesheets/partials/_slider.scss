@@ -36,35 +36,19 @@
         text-align: center;
         position: relative;
         padding-top: 20px;
+        @extend .border-top;
         &:before {
-          content: '';
-          position: absolute;
-          top: 0;
           left: 50%;
-          width: 80px;
-          height: 2px;
-          background-color: $gold;
           @include transform(translateX(-50%));
         }
       }
       h1 {
         @include font-size(5);
       }
-      dl {
-        dt, dd {
-          display: inline-block;
-          font-family: $serif;
-          @include font-size(5);
-          font-variant: small-caps;
-          letter-spacing: 1px;
-        }
-        dd {
-          color: $gold;
-          font-style: italic;
-          &:before {
-            content: '~';
-          }
-        }
+      @extend .header-list;
+      @extend .header-list-large;
+      dl dt {
+        color: #fff;
       }
       p {
         color: #fff;

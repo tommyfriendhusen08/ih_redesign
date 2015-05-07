@@ -22,8 +22,7 @@
     dl {
       text-align: center;
       dt, dd {
-        font-size: 45px;
-        font-size: 4.5rem;
+        @include font-size(4.5);
         font-family: $serif;
         text-transform: capitalize;
       }
@@ -120,9 +119,7 @@
               top: 50%;
               background: image-url('sprite-beds.svg') no-repeat;
               background-size: 317px 22px;
-              -webkit-transform: translateY(-50%);
-              -ms-transform: translateY(-50%);
-              transform: translateY(-50%);
+              @include transform(translateY(-50%));
             }
             &.beds-1 {
               width: 20px;
