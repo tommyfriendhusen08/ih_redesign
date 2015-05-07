@@ -22,9 +22,7 @@
     top: 50%;
     left: 50%;
     width: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    @include transform(translate(-50%, -50%));
   }
   &:hover {
     cursor: pointer;
@@ -58,8 +56,7 @@
       top: 10px;
       right: 10px;
       font-weight: bold;
-      font-size: 20px;
-      font-size: 2.0rem;
+      @include font-size(2);
       &:hover {
         cursor: pointer;
       }
@@ -71,9 +68,7 @@
       position: absolute;
       bottom: 30px;
       left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
+      @include transform(translateX(-50%));
       ul {
         padding-left: 0;
         margin-top: 40px;
@@ -132,9 +127,7 @@
         background: transparent image-url('sprite-details.svg') no-repeat;
         background-size: 144px 22px;
         background-position: -24px;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        @include transform(translateY(-50%));
       }
     }
     .details-beds-list {
@@ -255,11 +248,7 @@
       width: 118px; 
       height: 118px;
       border-top: 5px solid $gray-light;
-      -webkit-transform: rotate(-57deg);
-      -moz-transform: rotate(-57deg);
-      -ms-transform: rotate(-57deg);
-      -o-transform: rotate(-57deg);
-      transform: rotate(-57deg);
+      @include transform(rotate(-57deg));
       @media screen and (max-width: 767px) {
         display: none;
       }
@@ -273,11 +262,7 @@
       width: 118px; 
       height: 118px;
       border-top: 5px solid $gray-light;
-      -webkit-transform: rotate(57deg);
-      -moz-transform: rotate(57deg);
-      -ms-transform: rotate(57deg);
-      -o-transform: rotate(57deg);
-      transform: rotate(57deg);
+      @include transform(rotate(57deg));
       @media screen and (max-width: 767px) {
         display: none;
       }
@@ -319,8 +304,7 @@
     border-top: 0px;
     .floor, .outdoor, .parking {
       margin: 0 0 10px 10px;
-      font-size: 18px;
-      font-size: 1.8rem;
+      @include font-size(1.8);
       line-height: 46px;
       color: #5b5b5b;
       float: left;
@@ -349,9 +333,7 @@
         height: 22px;
         background: transparent image-url('sprite-layout.svg') no-repeat;
         background-size: 72px 22px;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        @include transform(translate(-50%, -50%));
       }
     }
     .outdoor {
@@ -369,8 +351,7 @@
       margin: 0 0 10px 10px;
       a {
         display: block;
-        font-size: 18px;
-        font-size: 1.8rem;
+        @include font-size(1.8);
         font-weight: 300;
         text-transform: uppercase;
         text-decoration: underline;
@@ -491,8 +472,7 @@
     }
     //Set up for icons that require text
     .amenity-steps, .amenity-seating {
-      font-size: 18px;
-      font-size: 1.8rem;
+      @include font-size(1.8);
       padding: 3px 5px 3px 38px;
       line-height: 32px;
       position: relative;
@@ -563,9 +543,7 @@
           position: absolute;
           top: 50%;
           left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          @include transform(translate(-50%, -50%));
         }
       }
       .room-amenities {
@@ -615,9 +593,7 @@
         border: 2px solid #fff;
         background: $gold image-url('icon-door.svg') no-repeat center center;
         background-size: 72px 22px;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        @include transform(translate(-50%, -50%));
         @media screen and (min-width: 768px) {
           top: 50%;
         }
@@ -658,15 +634,11 @@
       &:before {
         z-index: 1;
         left: 33.33%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        @include transform(translate(-50%, -50%));
       }
       &:after {
         right: 33.33%;
-        -webkit-transform: translate(50%, -50%);
-        -ms-transform: translate(50%, -50%);
-        transform: translate(50%, -50%);
+        @include transform(translate(-50%, -50%));
       }
     }
   }
@@ -687,7 +659,6 @@
       padding-left: 68px;
       h2 {
         color: $gold;
-        letter-spacing: 2px;
         margin-bottom: 5px;
       }
       &.difference-homes, &.difference-service, &.difference-booking {
@@ -737,8 +708,7 @@
         text-align: center;
         margin-top: 10px;
         text-transform: uppercase;
-        font-size: 18px;
-        font-size: 1.8rem;
+        @include font-size(1.8);
         letter-spacing: 2px;
         margin-bottom: 20px;
         dt {
@@ -806,8 +776,7 @@
       font-family: $serif;
       float: right;
       @media screen and (max-width: 767px) {
-        font-size: 20px;
-        font-size: 2rem;
+        @include font-size(2);
       }
       &:before {
         content: '~';
@@ -840,8 +809,7 @@
       color: $gray-charcoal;
       text-decoration: underline;
       text-transform: uppercase;
-      font-size: 18px;
-      font-size: 1.8rem;
+      @include font-size(1.8);
       padding: 6px 10px;
       margin-top: 30px;
       cursor: pointer;
@@ -890,9 +858,7 @@
         height: 64px;
         background: transparent image-url('what-sprite.svg') no-repeat 0 0;
         background-size: 142px 64px;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        @include transform(translate(-50%, -50%));
       }
     }
     &.what-love {
@@ -941,10 +907,7 @@
   background-color: #000;
   color: #fff;
   padding: 0;
-  background: image-url('property-hero_large.jpg') no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: image-url('property-hero_large.jpg') no-repeat center center;
   background-size: cover;
   .particulars-wrapper {
     @extend .section-full.section-squeeze;
@@ -1008,9 +971,7 @@
         height: 64px;
         background: transparent image-url('sprite-particulars.svg') no-repeat;
         background-size: 360px 64px;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        @include transform(translate(-50%, -50%));
       }
       &.particulars-checkin {
         &:after {
@@ -1082,8 +1043,7 @@
     p {
       font-family: $sans-serif;
       text-transform: uppercase;
-      font-size: 18px;
-      font-size: 1.8rem;
+      @include font-size(1.8);
       color: $gold;
       &:before {
         content: 'From';

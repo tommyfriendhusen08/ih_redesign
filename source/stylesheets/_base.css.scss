@@ -103,6 +103,7 @@ h1 {
 h2 {
   @include font-size(2);
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .border-top {
@@ -794,7 +795,6 @@ main {
       @extend .border-top;
     }
     h2 {
-      text-transform: uppercase;
       font-style: italic;
       margin-bottom: 10px;
     }
@@ -805,9 +805,7 @@ main {
     right: 20px;
     h2 {
       color: #fff;
-      text-transform: uppercase;
       @include font-size(1.6);
-      letter-spacing: 1px;
       font-style: italic;
     }
   }

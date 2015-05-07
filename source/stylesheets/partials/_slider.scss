@@ -385,10 +385,7 @@
       margin-bottom: 10px;
     }
     h2 {
-      text-transform: uppercase;
       @include font-size(1.2);
-      letter-spacing: 2px;
-      font-weight: 500;
       margin-bottom: 10px;
     }
     img {
@@ -405,7 +402,6 @@
       padding: 0 40px 40px;
       h2 {
         @include font-size(1.8);
-        font-weight: 300;
       }
     }
   }
