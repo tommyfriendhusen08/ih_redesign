@@ -20,3 +20,11 @@ $gray-charcoal: #404040;
 $gray-text: #7f7d7e;
 $gray-dark: #1d1d1d;
 $gold: #b79c57;
+
+/* Mixins
+---------------------------------------*/
+
+@mixin font-size($sizeValue: 1.4) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
