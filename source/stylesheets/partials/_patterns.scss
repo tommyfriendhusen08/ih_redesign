@@ -13,4 +13,9 @@
   .pattern-group {
     margin-bottom: 20px;
   }
+  pre {
+    padding: 20px 0;
+    @include font-size(1.6);
+    margin-bottom: 20px;
+  }
 }

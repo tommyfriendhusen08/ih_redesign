@@ -226,12 +226,16 @@ GEM
     padrino-support (0.12.4)
       activesupport (>= 3.1)
     pmap (1.0.2)
+    posix-spawn (0.3.11)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
     pry-nav (0.2.4)
       pry (>= 0.9.10, < 0.11.0)
+    pygments.rb (0.6.3)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.2.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -278,6 +282,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.6)
+    yajl-ruby (1.2.1)
 
 PLATFORMS
   ruby
@@ -298,6 +303,7 @@ DEPENDENCIES
   net-netrc
   pry
   pry-nav
+  pygments.rb
   rake
   rb-fsevent
   sekrets
