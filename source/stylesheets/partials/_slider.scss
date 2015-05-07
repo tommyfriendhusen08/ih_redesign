@@ -44,24 +44,17 @@
           width: 80px;
           height: 2px;
           background-color: $gold;
-          -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+          @include transform(translateX(-50%));
         }
       }
       h1 {
-        font-family: $serif;
-        font-size: 50px;
-        font-size: 5rem;
-        font-variant: small-caps;
-        letter-spacing: 1px;
+        @include font-size(5);
       }
       dl {
         dt, dd {
           display: inline-block;
           font-family: $serif;
-          font-size: 50px;
-          font-size: 5rem;
+          @include font-size(5);
           font-variant: small-caps;
           letter-spacing: 1px;
         }
@@ -75,10 +68,8 @@
       }
       p {
         color: #fff;
-        font-size: 18px;
-        font-size: 1.8rem;
+        @include font-size(1.8);
         line-height: 40px;
-        line-height: 4rem;
         letter-spacing: 1px;
         margin-bottom: 30px;
         text-align: center;
@@ -90,8 +81,7 @@
       }
     }
     p {
-      font-size: 16px;
-      font-size: 1.6rem;
+      @include font-size(1.6);
       color: #fff;
     }
     .slide-number {
@@ -125,8 +115,7 @@
           position: relative;
           border: 2px solid #fff;
           padding: 10px 12px 10px 44px;
-          font-size: 16px;
-          font-size: 1.6rem;
+          @include font-size(1.6);
           background-color: #000;
           color: #fff;
           text-transform: uppercase;
@@ -141,9 +130,7 @@
             background-position: 0 center;
             width: 22px;
             height: 100%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+            @include transform(translateY(-50%));
           }
           &.btn-explore-do {
             &:before {
@@ -190,9 +177,7 @@
               border-left: 5px solid transparent;
               border-right: 5px solid transparent; 
               border-top: 5px solid #fff;
-              -webkit-transform: translateY(-50%);
-              -ms-transform: translateY(-50%);
-              transform: translateY(-50%);
+              @include transform(translateY(-50%));
             }
           }
           &.btn-share-email {
@@ -236,17 +221,14 @@
           }
           .owl-buttons {
             position: absolute;
+            overflow: hidden;
             top: 50%;
             left: 50%;
             width: 90%;
-            -webkit-transform: translate(-50%,-50%);
-            -ms-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-            overflow: hidden;
+            @include transform(translate(-50%, -50%));
             div {
               background: transparent;
-              font-size: 120px;
-              font-size: 12rem;
+              @include font-size(12);
               padding: 0;
             }
             .owl-prev {
@@ -287,8 +269,7 @@
             font-weight: 300;
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-size: 18px;
-            font-size: 1.8rem;
+            @include font-size(1.8);
             &:hover {
               cursor: pointer;
             }
@@ -338,9 +319,7 @@
                 border-radius: 35px;
                 border: 2px solid #fff;
                 box-shadow: 1px 1px 5px #ccc, -1px -1px 5px #ccc;
-                -webkit-transform: translateX(-50%);
-                -ms-transform: translateX(-50%);
-                transform: translateX(-50%);
+                @include transform(translateX(-50%));
               }
               &:before {
                 top: 23px;
@@ -349,9 +328,7 @@
                 width: 23px;
                 margin: 10px 0 0;
                 z-index: 2;
-                -webkit-transform: translate(-50%,-50%);
-                -ms-transform: translate(-50%,-50%);
-                transform: translate(-50%,-50%);
+                @include transform(translate(-50%, -50%));
               }
             }
             &.explore-nav-eat {
@@ -405,16 +382,11 @@
   article {
     width: 100%;
     h1 {
-      font-family: $serif;
-      font-size: 40px;
-      font-size: 4rem;
-      letter-spacing: 4px;
       margin-bottom: 10px;
     }
     h2 {
       text-transform: uppercase;
-      font-size: 12px;
-      font-size: 1.2rem;
+      @include font-size(1.2);
       letter-spacing: 2px;
       font-weight: 500;
       margin-bottom: 10px;
@@ -432,8 +404,7 @@
       width: 100%;
       padding: 0 40px 40px;
       h2 {
-        font-size: 18px;
-        font-size: 1.8rem;
+        @include font-size(1.8);
         font-weight: 300;
       }
     }
@@ -448,8 +419,7 @@
 
 //search content
 .filter {
-  font-size: 18px;
-  font-size: 1.8rem;
+  @include font-size(1.8);
   text-transform: uppercase;
   letter-spacing: 1px;
   .filter-group {
@@ -474,9 +444,7 @@
       border-left: 6px solid transparent;
       border-right: 6px solid transparent;
       border-top: 6px solid #fff;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      @include transform(translateY(-50%));
     }
     .filter-selection {
       color: $gold;
@@ -496,8 +464,7 @@
       dl {
         text-align: left;
         dt, dd {
-          font-size: 18px;
-          font-size: 1.8rem;
+          @include font-size(1.8);
           font-family: $sans-serif;
         }
         dd {

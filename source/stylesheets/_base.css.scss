@@ -97,6 +97,7 @@ h1 {
   @include font-size(4.8);
   font-family: $serif;
   font-variant: small-caps;
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -249,7 +250,6 @@ footer {
       padding: 20px;
     }
     h1 {
-      font-variant: small-caps;
       margin-bottom: 10px;
       @media screen and (max-width: 767px) {
         text-align: center;
