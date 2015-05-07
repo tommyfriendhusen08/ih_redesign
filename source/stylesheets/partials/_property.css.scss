@@ -363,146 +363,6 @@
       }
     }
   }
-  .room-amenities-list {
-    list-style: none;
-    padding-left: 0;
-    overflow: hidden;
-    margin-bottom: 0;
-    li {
-      border-right: none;
-      margin: 0 6px 5px 0;
-      padding: 3px 0;
-      float: left;
-      height: 32px;
-      background: #fff image-url('sprite-amenities.svg') no-repeat;
-      background-position: 0 50%;
-      background-size: 720px 32px;
-      &:last-of-type {
-        margin-right: 0;
-      }
-    }
-    .bed-king-cali {
-      @extend .hide-text;
-      width: 38px;
-      background-position: -324px 50%;
-    }
-    .bed-king {
-      @extend .hide-text;
-      width: 38px;
-      background-position: -467px 50%;
-    }
-    .bed-queen {
-      @extend .hide-text;
-      width: 38px;
-      background-position: -503px 50%;
-    }
-    .bed-twin {
-      @extend .hide-text;
-      width: 38px;
-      background-position: -540px 50%;
-    }
-    .bed-twin-double {
-      @extend .hide-text;
-      width: 38px;
-      background-position: -432px 50%;
-    }
-    .bed-sleeper {
-      @extend .hide-text;
-      width: 38px;
-      background-position: -396px 50%;
-    }
-    .bed-sleeper-queen {
-      @extend .hide-text;
-      width: 38px;
-      background-position: -360px 50%;
-    }
-    .bed-bunk-2beds {
-      @extend .hide-text;
-      background-position: -576px 50%;
-      width: 38px;
-    }
-    .bed-bunk-3beds {
-      @extend .hide-text;
-      background-position: -612px 50%;
-      width: 38px;
-    }
-    .bed-bunk-4beds {
-      @extend .hide-text;
-      background-position: -648px 50%;
-      width: 38px;
-    }
-    .amenity-tv {
-      @extend .hide-text;
-      width: 38px;
-      background-position: 0 50%;
-    }
-    .amenity-grill {
-      @extend .hide-text;
-      width: 38px;
-      background-position: -72px 50%;
-    }
-    .amenity-toilet {
-      @extend .hide-text;
-      width: 38px;
-      background-position: -108px 50%;
-    }
-    .amenity-dining {
-      @extend .hide-text;
-      width: 38px;
-      background-position: -144px 50%;
-    }
-    .amenity-fridge {
-      @extend .hide-text;
-      width: 38px;
-      background-position: -180px 50%;
-    }
-    .amenity-tub {
-      @extend .hide-text;
-      width: 38px;
-      background-position: -216px 50%;
-    }
-    .amenity-shower {
-      @extend .hide-text;
-      width: 38px;
-      background-position: -252px 50%;
-    }
-    .amenity-sink {
-      @extend .hide-text;
-      width: 38px;
-      background-position: -288px 50%;
-    }
-    //Set up for icons that require text
-    .amenity-steps, .amenity-seating {
-      @include font-size(1.8);
-      padding: 3px 5px 3px 38px;
-      line-height: 32px;
-      position: relative;
-      background: none;
-      background-color: #fff;
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 38px;
-        height: 32px;
-        background: transparent image-url('sprite-amenities.svg') no-repeat;
-        background-size: 720px 32px;
-      }
-    }
-    .amenity-steps {
-      &:before {
-        background-position: -36px 50%;
-      }
-    }
-    .amenity-seating {
-      padding-left: 32px;
-      &:before {
-        width: 30px;
-        background-position: -684px 50%;
-      }
-    }
-  }
   // Room overlay wrapper with connected rooms
   .room-grid {
     position: relative;
@@ -641,6 +501,147 @@
         right: 33.33%;
         @include transform(translate(-50%, -50%));
       }
+    }
+  }
+}
+
+.room-amenities-list {
+  list-style: none;
+  padding-left: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+  li {
+    border-right: none;
+    margin: 0 6px 5px 0;
+    padding: 3px 0;
+    float: left;
+    height: 32px;
+    background: #fff image-url('sprite-amenities.svg') no-repeat;
+    background-position: 0 50%;
+    background-size: 720px 32px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  .bed-king-cali {
+    @extend .hide-text;
+    width: 38px;
+    background-position: -324px 50%;
+  }
+  .bed-king {
+    @extend .hide-text;
+    width: 38px;
+    background-position: -467px 50%;
+  }
+  .bed-queen {
+    @extend .hide-text;
+    width: 38px;
+    background-position: -503px 50%;
+  }
+  .bed-twin {
+    @extend .hide-text;
+    width: 38px;
+    background-position: -540px 50%;
+  }
+  .bed-twin-double {
+    @extend .hide-text;
+    width: 38px;
+    background-position: -432px 50%;
+  }
+  .bed-sleeper {
+    @extend .hide-text;
+    width: 38px;
+    background-position: -396px 50%;
+  }
+  .bed-sleeper-queen {
+    @extend .hide-text;
+    width: 38px;
+    background-position: -360px 50%;
+  }
+  .bed-bunk-2beds {
+    @extend .hide-text;
+    background-position: -576px 50%;
+    width: 38px;
+  }
+  .bed-bunk-3beds {
+    @extend .hide-text;
+    background-position: -612px 50%;
+    width: 38px;
+  }
+  .bed-bunk-4beds {
+    @extend .hide-text;
+    background-position: -648px 50%;
+    width: 38px;
+  }
+  .amenity-tv {
+    @extend .hide-text;
+    width: 38px;
+    background-position: 0 50%;
+  }
+  .amenity-grill {
+    @extend .hide-text;
+    width: 38px;
+    background-position: -72px 50%;
+  }
+  .amenity-toilet {
+    @extend .hide-text;
+    width: 38px;
+    background-position: -108px 50%;
+  }
+  .amenity-dining {
+    @extend .hide-text;
+    width: 38px;
+    background-position: -144px 50%;
+  }
+  .amenity-fridge {
+    @extend .hide-text;
+    width: 38px;
+    background-position: -180px 50%;
+  }
+  .amenity-tub {
+    @extend .hide-text;
+    width: 38px;
+    background-position: -216px 50%;
+  }
+  .amenity-shower {
+    @extend .hide-text;
+    width: 38px;
+    background-position: -252px 50%;
+  }
+  .amenity-sink {
+    @extend .hide-text;
+    width: 38px;
+    background-position: -288px 50%;
+  }
+  //Set up for icons that require text
+  .amenity-steps, .amenity-seating {
+    @include font-size(1.8);
+    padding: 3px 5px 3px 38px;
+    line-height: 32px;
+    position: relative;
+    background: none;
+    background-color: #fff;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 38px;
+      height: 32px;
+      background: transparent image-url('sprite-amenities.svg') no-repeat;
+      background-size: 720px 32px;
+    }
+  }
+  .amenity-steps {
+    &:before {
+      background-position: -36px 50%;
+    }
+  }
+  .amenity-seating {
+    padding-left: 32px;
+    &:before {
+      width: 30px;
+      background-position: -684px 50%;
     }
   }
 }
