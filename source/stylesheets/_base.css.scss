@@ -166,39 +166,34 @@ ul {
 }
 
 .header-list {
-  dl {
-    dt, dd {
-      display: inline-block;
-      @include font-size(1.8);
-      text-transform: uppercase;
-      color: $gray-charcoal;
-      letter-spacing: 1px;
-    }
-    dd {
-      color: $gold;
-      font-style: italic;
-      &:before {
-        content: '~';
-      }
+  dt, dd {
+    display: inline-block;
+    @include font-size(1.8);
+    text-transform: uppercase;
+    color: $gray-charcoal;
+    letter-spacing: 1px;
+  }
+  dd {
+    color: $gold;
+    font-style: italic;
+    &:before {
+      content: '~';
     }
   }
 }
 
 .header-list-large {
-  dl {
-    margin-left: 20px;
-    dt, dd {
-      @include font-size(4.8);
-      font-family: $serif;
-      text-transform: capitalize;
-    }
-    dt {
-      font-variant: small-caps;
-    }
-    dd {
-      &:before {
-        margin-left: 5px;
-      }
+  dt, dd {
+    @include font-size(4.8);
+    font-family: $serif;
+    text-transform: capitalize;
+  }
+  dt {
+    font-variant: small-caps;
+  }
+  dd {
+    &:before {
+      margin-left: 5px;
     }
   }
 }
@@ -913,6 +908,7 @@ main {
     padding: 0;
   }
   header {
+    padding: 0 20px;
     @extend .header-list-large;
   }
 }
