@@ -16,7 +16,7 @@ You can push to GitHub as needed from that point forward.
 
 ## How to run the middleman server locally for development
 
-1. <code>bundle exec rake server</code>
+1. <code>bundle exec middleman</code>
 2. point your browser at localhost:4567
 
 ## How to deploy
