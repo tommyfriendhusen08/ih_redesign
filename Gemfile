@@ -24,7 +24,7 @@ gem 'rake'
 
 # Bourbon.io
 gem 'bourbon'
-gem 'redcarpet'
+gem "middleman-syntax"
 
 # Parses .netrc
 gem 'net-netrc'

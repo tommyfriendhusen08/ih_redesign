@@ -70,6 +70,8 @@ helpers do
   end
 end
 
+activate :syntax
+
 # Change the CSS directory
 # set :css_dir, "alternative_css_directory"
 
