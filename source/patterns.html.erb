@@ -74,5 +74,108 @@
         Donec vel rhoncus nisi. Maecenas condimentum maximus lorem sit amet rutrum. In fermentum imperdiet leo eu posuere. Vestibulum dictum dapibus est, et consectetur dolor tincidunt et. Vivamus eu pretium magna. Praesent placerat gravida justo a ultrices. Vivamus nec dictum odio, at commodo ipsum. Nam malesuada lacinia ipsum. Sed tincidunt pellentesque lectus, a luctus metus lobortis eget. Vivamus mollis, ante vel consectetur fermentum, lectus sem interdum ligula, id eleifend nunc velit blandit nibh.
       </p>
     </div>
+    <div class="pattern-group">
+      <header>
+        <h1 class="pattern-header">
+          Lists
+        </h1>
+      </header>
+      <h2 class="pattern-subhead">
+        Standard Details List
+      </h2>
+      <ul class="details-list">
+        <li class="details-people">Sleeps 10</li>
+        <li class="details-baths">5.5 Baths</li>
+        <li class="details-bedrooms">42 Bedrooms</li>
+        <li class="details-size">7000 FT<sup>2</sup></li>
+        <li class="details-type">Home</li>
+        <li class="details-parking">4</li>
+      </ul>
+      <% code("html") do %>
+        <ul class="details-list">
+          <li class="details-people">Sleeps 10</li>
+          <li class="details-baths">5.5 Baths</li>
+          <li class="details-bedrooms">42 Bedrooms</li>
+          <li class="details-size">7000 FT<sup>2</sup></li>
+          <li class="details-type">Home</li>
+          <li class="details-parking">4</li>
+        </ul>
+      <% end %>
+      <h2 class="pattern-subhead">
+        Box List
+      </h2>
+      <ul class="box-list">
+        <li>
+          <a href="#">
+            Outdoor Grill
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Central Heating
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Firewood Provided
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Free Shuttle
+          </a>
+        </li>
+      </ul>
+      <% code("html") do %>
+        <ul>
+          <li>
+            <a href="#">
+              Outdoor Grill
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Central Heating
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Firewood Provided
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Free Shuttle
+            </a>
+          </li>
+        </ul>
+      <% end %>
+      <h2 class="pattern-subhead">
+        Property Details Beds-per-room List
+      </h2>
+      <ul class="details-beds-list">
+        <li>
+          <ul>
+            <li class="bed-king">King</li>
+            <li class="bed-king-cali">Cali King</li>
+            <li class="bed-sleeper-double">Sleeper Double</li>
+            <li class="bed-sleeper">Sleeper</li>
+            <li class="bed-twin-double">Twin Double</li>
+          </ul>
+          Master Bedroom
+        </li>
+        <li>
+          <ul>
+            <li class="bed-queen">Queen</li>
+            <li class="bed-twin">Twin</li>
+            <li class="bed-twin">Twin</li>
+            <li class="bed-bunk-2beds">Bunks 2 Beds</li>
+            <li class="bed-bunk-3beds">Bunks 3 Beds</li>
+            <li class="bed-bunk-4beds">Bunks 4 Beds</li>
+          </ul>
+          Guest Bedroom #2
+        </li>
+      </ul>
+    </div>
   </div>
 </section>

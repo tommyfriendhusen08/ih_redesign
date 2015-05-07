@@ -130,83 +130,84 @@
         @include transform(translateY(-50%));
       }
     }
-    .details-beds-list {
-      padding: 0px;
-      list-style: none;
-      border-left: 1px solid $gray-charcoal;
-      overflow: hidden;
+  }
+}
+
+.details-beds-list {
+  padding: 0px;
+  list-style: none;
+  border-left: 1px solid $gray-charcoal;
+  overflow: hidden;
+  li {
+    float: left;
+    padding: 10px;
+    border: 1px solid $gray-charcoal;
+    border-left: none;
+    height: 120px;
+    text-align: center;
+    font-family: $serif;
+    font-style: italic;
+    color: #9a9a9a;
+    &:last-of-type {
+      border-right: 1px solid $gray-charcoal;
+    }
+    ul {
+      padding: 0;
+      margin: 0 auto 10px auto;
       li {
         float: left;
-        padding: 10px;
-        border: 1px solid $gray-charcoal;
-        border-left: none;
-        height: 120px;
-        text-align: center;
-        font-family: $serif;
-        font-style: italic;
-        color: #9a9a9a;
+        height: 64px;
+        width: 72px;
+        border: none;
+        background: transparent image-url('sprite-amenities.svg') no-repeat;
+        background-size: 1440px 64px;
+        background-position: 0 50%;
+        margin-right: 5px;
+        padding: 0;
+        @extend .hide-text;
         &:last-of-type {
-          border-right: 1px solid $gray-charcoal;
+          border: none;
+          margin-right: 0px;
         }
-        ul {
-          padding: 0;
-          margin: 0 auto 10px auto;
-          li {
-            float: left;
-            height: 64px;
-            width: 72px;
-            border: none;
-            background: transparent image-url('sprite-amenities.svg') no-repeat;
-            background-size: 1440px 64px;
-            background-position: 0 50%;
-            margin-right: 5px;
-            padding: 0;
-            @extend .hide-text;
-            &:last-of-type {
-              border: none;
-              margin-right: 0px;
-            }
-            &.bed-king-cali {
-              width: 72px;
-              background-position: -648px 50%;
-            }
-            &.bed-king {
-              width: 72px;
-              background-position: -936px 50%;
-            }
-            &.bed-queen {
-              width: 72px;
-              background-position: -1008px 50%; 
-            }
-            &.bed-twin {
-              background-position: -1095px 50%;
-              width: 44px;
-            }
-            &.bed-twin-double {
-              background-position: -864px 50%;
-              width: 72px;
-            }
-            &.bed-sleeper {
-              width: 72px;
-              background-position: -792px 50%; 
-            }
-            &.bed-sleeper-double {
-              width: 72px;
-              background-position: -720px 50%; 
-            }
-            &.bed-bunk-2beds {
-              width: 72px;
-              background-position: -1152px 50%;
-            }
-            &.bed-bunk-3beds {
-              width: 72px;
-              background-position: -1224px 50%;
-            }
-            &.bed-bunk-4beds {
-              width: 72px;
-              background-position: -1296px 50%;
-            }
-          }
+        &.bed-king-cali {
+          width: 72px;
+          background-position: -648px 50%;
+        }
+        &.bed-king {
+          width: 72px;
+          background-position: -936px 50%;
+        }
+        &.bed-queen {
+          width: 72px;
+          background-position: -1008px 50%; 
+        }
+        &.bed-twin {
+          background-position: -1095px 50%;
+          width: 44px;
+        }
+        &.bed-twin-double {
+          background-position: -864px 50%;
+          width: 72px;
+        }
+        &.bed-sleeper {
+          width: 72px;
+          background-position: -792px 50%; 
+        }
+        &.bed-sleeper-double {
+          width: 72px;
+          background-position: -720px 50%; 
+        }
+        &.bed-bunk-2beds {
+          width: 72px;
+          background-position: -1152px 50%;
+        }
+        &.bed-bunk-3beds {
+          width: 72px;
+          background-position: -1224px 50%;
+        }
+        &.bed-bunk-4beds {
+          width: 72px;
+          background-position: -1296px 50%;
         }
       }
     }

@@ -3,7 +3,7 @@
 .patterns {
   header {
     h1 {
-      @include font-size(1.6);
+      @include font-size(1.8);
       font-family: $sans-serif;
       text-transform: uppercase;
       border-bottom: 1px solid $gray-charcoal;
@@ -12,6 +12,10 @@
   }
   .pattern-group {
     margin-bottom: 20px;
+    .pattern-subhead {
+      margin-bottom: 10px;
+      @include font-size(1.8);
+    }
   }
   pre {
     padding: 20px 0;
