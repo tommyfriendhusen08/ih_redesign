@@ -8,11 +8,11 @@
       </header>
 
       <h1>
-        Main Heading
+        Main Heading ~ h1
       </h1>
 
       <h2>
-        Secondary Heading
+        Secondary Heading ~ h2
       </h2>
 
       <dl class="header-list header-list-large">
@@ -23,6 +23,10 @@
           After Heading Large
         </dd>
       </dl>
+
+      <p>
+        SASS: @extend .header-list; @extend .header-list-large;
+      </p>
 
       <% code("html") do %>
         <dl class="header-list header-list-large">
@@ -43,6 +47,22 @@
           After Heading
         </dd>
       </dl>
+
+      <p>
+        SASS: @extend .header-list;
+      </p>
+
+      <% code("html") do %>
+        <dl class="header-list">
+          <dt>
+            Before Heading Large
+          </dt>
+          <dd>
+            After Heading Large
+          </dd>
+        </dl>
+      <% end %>
+
     </div>
     <div class="pattern-group">
       <header>
