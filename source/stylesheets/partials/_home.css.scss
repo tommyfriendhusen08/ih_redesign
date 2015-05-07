@@ -13,18 +13,13 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  @include transform(translate(-50%, -50%));
   width: 90%;
   h1 {
     color: #fff;
-    font-family: $serif;
-    font-size: 48px;
-    font-size: 4.8rem;
+    @include font-size(4.8);
     line-height: 60px;
     text-align: center;
-    font-variant: small-caps;
     @media screen and (max-width: 767px) {
       line-height: 40px;
     }
@@ -79,7 +74,7 @@
 .home-staff {
   @extend .section-teaser;
   background: $gray-light image-url('background-topo.svg');
-  background-size: 100%;
+  background-size: cover;
   padding: 60px 0 20px;
   margin-bottom: 20px;
   p {
@@ -93,7 +88,7 @@
   }
   .home-carousel {
     width: 110%;
-    transform: translateX(-5%);
+    @include transform(translateX(-5%));
     .item {
       padding: 0 10px;
       img {
@@ -104,7 +99,7 @@
     }
     @media screen and (max-width: 479px) {
       width: 100%;
-      transform: translateX(0%);
+      @include transform(translateX(0%));
       .item {
         padding: 0;
         img {
@@ -152,9 +147,7 @@
       position: absolute;
       top: 50%;
       left: 0;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      @include transform(translateY(-50%));
       @media screen and (max-width: 479px) {
         display: none;
       }
