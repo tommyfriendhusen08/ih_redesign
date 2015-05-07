@@ -22,6 +22,9 @@ gem "compass-susy-plugin"
 gem 'capistrano'
 gem 'rake'
 
+# Bourbon.io
+gem 'bourbon'
+
 # Parses .netrc
 gem 'net-netrc'
 

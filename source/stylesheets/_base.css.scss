@@ -89,10 +89,15 @@ p {
 /* Headers
 ------------------------------------------*/
 
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 1px;
+}
+
 h1 {
   margin: 0;
-  font-size: 30px;
-  font-size: 3rem;
+  font-size: 48px;
+  font-size: 4.8rem;
+  font-family: $serif;
 }
 
 h2 {
@@ -100,6 +105,24 @@ h2 {
   font-size: 20px;
   font-size: 2rem;
   font-weight: 300;
+}
+
+.border-top {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 70px;
+    background-color: $gold;
+    @media screen and (max-width: 767px) {
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
 }
 
 /* Lists
@@ -237,9 +260,7 @@ footer {
     }
     h1 {
       font-variant: small-caps;
-      font-family: $serif;
       margin-bottom: 10px;
-      letter-spacing: 2px;
       @media screen and (max-width: 767px) {
         text-align: center;
         margin-top: 30px;
@@ -433,9 +454,7 @@ footer {
             box-shadow: 1px 1px 5px #ccc, -1px -1px 5px #ccc;
             line-height: 88px;
             -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
             transform: translateY(-50%);
           }
           &:after {
@@ -449,9 +468,7 @@ footer {
             left: 23px;
             top: 50%;
             -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
           }
         }
@@ -550,7 +567,8 @@ footer {
 /* Modules
 ------------------------------------------*/
 
-//Generic photo grid with 1, 2 or 3 column
+// Generic photo grid with 1, 2 or 3 column
+// Used on Explore and More Homes Sections
 
 .standard-grid {
   position: relative;
@@ -630,7 +648,6 @@ footer {
   }
 }
 
-
 // Universal Details List
 .details-list {
   padding: 0px;
@@ -709,9 +726,6 @@ footer {
     text-align: center;
     color: #000;
     padding-top: 20px;
-    font-family: $serif;
-    font-size: 48px;
-    font-size: 4.8rem;
     margin-bottom: 20px;
     font-variant: small-caps;
     &:before {
@@ -743,6 +757,7 @@ footer {
   h1 {
     color: $gold;
     text-transform: uppercase;
+    font-family: $sans-serif;
     font-size: 18px;
     font-size: 1.8rem;
     letter-spacing: 2px;
@@ -795,12 +810,13 @@ main {
     position: absolute;
     left: 100px;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
     background-color: #fff;
     width: 520px;
     padding: 30px;
+    // -webkit-transform: translateY(-50%);
+    // -ms-transform: translateY(-50%);
+    // transform: translateY(-50%);
+    @include transform(translateY(-50%));
     @media screen and (max-width: 767px) {
       background-color: rgba(255,255,255,0.9);
       width: 100%;
@@ -810,28 +826,11 @@ main {
     }
     h1 {
       position: relative;
-      font-family: $serif;
       font-variant: small-caps;
-      font-size: 45px;
-      font-size: 4.5rem;
       padding-top: 20px;
       margin-bottom: 10px;
       color: #000;
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 1px;
-        width: 70px;
-        background-color: $gold;
-        @media screen and (max-width: 767px) {
-          left: 50%;
-          -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-        }
-      }
+      @extend .border-top;
     }
     h2 {
       text-transform: uppercase;
@@ -883,8 +882,6 @@ main {
   h1 {
     font-family: $serif;
     margin-bottom: 20px;
-    font-size: 48px;
-    font-size: 4.8rem;
     letter-spacing: 1px;
     font-weight: 500;
     color: #5b5b5b;

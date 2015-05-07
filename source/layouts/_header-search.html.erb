@@ -10,22 +10,29 @@
   <%= link_to image_tag('logo.svg'), '/' %>
 </div>
 <div class="booking-nav">
-  <%= link_to 'Book Now For <strong>$3452</strong>', '#' %>
+  <ul class="btn-search">
+    <li>
+      <a href="#" class="nav-search btn-slide" data-slide="search">
+        View Other Homes
+      </a>
+    </li>
+  </ul>
+  <%= link_to 'Book Now For <strong>$3452</strong>', '#', :class => 'btn-book' %>
 </div>
 <nav class="main-nav" role="navigation">
   <ul>
     <li>
-      <a href="#" class="nav-contact">
+      <a href="#" class="nav-contact btn-slide" data-slide="contact">
         Contact
       </a>
     </li>
     <li>
-      <a href="#" class="nav-share">
+      <a href="#" class="nav-share btn-slide" data-slide="share">
         Share
       </a>
     </li>
     <li>
-      <a href="#" class="nav-explore">
+      <a href="#" class="nav-explore btn-slide" data-slide="explore">
         Explore
       </a>
     </li>
