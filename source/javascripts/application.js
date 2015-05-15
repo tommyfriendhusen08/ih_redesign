@@ -12,14 +12,16 @@ $(document).ready(function() {
   //Explore Flyout
   $('.btn-slide').click(function() {
     var whichSlide = ".slide-" + $(this).data('slide');
+    $('.cover').addClass('active');
+    $('.slide-content').addClass('active');
     // hide header nav while explore tab is open
-    $('.site-header').hide();
+    // $('.site-header').hide();
     // add content-open class for explore width -- see site.css.scss to adjust width
-    $('body').addClass('content-open');
+    // $('body').addClass('content-open');
     // fade in content
-    $(whichSlide).addClass('active');
+    // $(whichSlide).addClass('active');
     // lock background to prevent it from scrolling during explore interaction
-    $('.page-wrapper').css('position', 'fixed');
+    // $('.page-wrapper').css('position', 'fixed');
     if(whichSlide = ".slide-slideshow") {
       var owl = $(".owl-carousel"),
       status = $(".slide-number");
@@ -47,15 +49,17 @@ $(document).ready(function() {
   });
   $('.close-drawer-button').click(function() {
     // remove content open class
-    $('body').removeClass('content-open');
+    // $('body').removeClass('content-open');
     // unlock background to enable scrolling
-    $('.page-wrapper').css('position', 'relative');
+    // $('.page-wrapper').css('position', 'relative');
     // fade header nav back in
     $('.site-header').show();
     //resets body to top of window -- fixes a strange scrolling issue
     // $('body').scrollTop(0);
     // fade out content
-    $('.slide-content-wrapper').removeClass('active')
+    // $('.slide-content-wrapper').removeClass('active');
+    $('.cover').removeClass('active');
+    $('.slide-content').removeClass('active');
   });
 
   $(".home-carousel").owlCarousel({
