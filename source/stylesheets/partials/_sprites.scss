@@ -15,9 +15,319 @@
     background: image-url('sprite-master.svg') no-repeat 0 0;
     background-size: 1000px 700px;
   }
-  &.bed {
+  &.i-phone {
+    &:before {
+      background-position: 0 0;
+    }
+  }
+  &.i-share {
+    &:before {
+      background-position: -100px 0;
+    }
+  }
+  &.i-globe {
+    &:before {
+      background-position: -200px 0;
+    }
+  }
+  &.i-search {
+    &:before {
+      background-position: -300px 0;
+    }
+  }
+  &.i-tv {
+    &:before {
+      background-position: -400px 0;
+    }
+  }
+  &.i-shoe {
+    &:before {
+      background-position: -500px 0;
+    }
+  }
+  &.i-grill {
+    &:before {
+      background-position: -600px 0;
+    }
+  }
+  &.i-bathroom {
+    &:before {
+      background-position: -700px 0;
+    }
+  }
+  &.i-utensils {
+    &:before {
+      background-position: -800px 0;
+    }
+  }
+  &.i-fridge {
+    &:before {
+      background-position: -900px 0;
+    }
+  }
+  &.i-bathtub {
+    &:before {
+      background-position: 0 -100px;
+    }
+  }
+  &.i-shower {
+    &:before {
+      background-position: -100px -100px;
+    }
+  }
+  &.i-sink {
+    &:before {
+      background-position: -200px -100px;
+    }
+  }
+  &.i-bed-cali {
+    &:before {
+      background-position: -300px -100px;
+    }
+  }
+  &.i-bed-king {
+    &:before {
+      background-position: -400px -100px;
+    }
+  }
+  &.i-bed-queen {
+    &:before {
+      background-position: -500px -100px;
+    }
+  }
+  &.i-bed-sofa {
+    &:before {
+      background-position: -600px -100px;
+    }
+  }
+  &.i-bed-sofa-single {
+    &:before {
+      background-position: -700px -100px;
+    }
+  }
+  &.i-bed-twin-double {
+    &:before {
+      background-position: -800px -100px;
+    }
+  }
+  &.i-bed-twin {
+    &:before {
+      background-position: -900px -100px;
+    }
+  }
+  &.i-bed-bunk {
+    &:before {
+      background-position: 0 -200px;
+    }
+  }
+  &.i-bed-bunk-triple {
+    &:before {
+      background-position: -100px -200px;
+    }
+  }
+  &.i-bed-bunk-quad {
+    &:before {
+      background-position: -200px -200px;
+    }
+  }
+  &.i-car {
+    &:before {
+      background-position: -300px -200px;
+    }
+  }
+  &.i-bike {
+    &:before {
+      background-position: -400px -200px;
+    }
+  }
+  &.i-townhouse {
+    &:before {
+      background-position: -500px -200px;
+    }
+  }
+  &.i-condo {
+    &:before {
+      background-position: -600px -200px;
+    }
+  }
+  &.i-house {
+    &:before {
+      background-position: -700px -200px;
+    }
+  }
+  &.i-mtns {
+    &:before {
+      background-position: -800px -200px;
+    }
+  }
+  &.i-clock {
+    &:before {
+      background-position: -200px -200px;
+    }
+  }
+  &.i-plane {
+    &:before {
+      background-position: 0 -300px;
+    }
+  }
+  &.i-map {
+    &:before {
+      background-position: -100px -300px;
+    }
+  }
+  &.i-calculator {
+    &:before {
+      background-position: -200px -300px;
+    }
+  }
+  &.i-clipboard {
+    &:before {
+      background-position: -300px -300px;
+    }
+  }
+  &.i-stairs {
+    &:before {
+      background-position: -400px -300px;
+    }
+  }
+  &.i-sun {
+    &:before {
+      background-position: -500px -300px;
+    }
+  }
+  &.i-chair {
+    &:before {
+      background-position: -600px -300px;
+    }
+  }
+  &.i-door {
+    &:before {
+      background-position: -700px -300px;
+    }
+  }
+  &.i-grapes {
+    &:before {
+      background-position: -800px -300px;
+    }
+  }
+  &.i-beer {
+    &:before {
+      background-position: -900px -300px;
+    }
+  }
+  &.i-cocktail {
+    &:before {
+      background-position: 0 -400px;
+    }
+  }
+  &.i-coffee {
+    &:before {
+      background-position: -100px -400px;
+    }
+  }
+  &.i-wine {
+    &:before {
+      background-position: -200px -400px;
+    }
+  }
+  &.i-location {
+    &:before {
+      background-position: -300px -400px;
+    }
+  }
+  &.i-heart {
+    &:before {
+      background-position: -400px -400px;
+    }
+  }
+  &.i-arrow {
+    &:before {
+      background-position: -500px -400px;
+    }
+  }
+  &.i-close {
+    &:before {
+      background-position: -600px -400px;
+    }
+  }
+  &.i-link-external {
+    &:before {
+      background-position: -700px -400px;
+    }
+  }
+  &.i-calendar {
+    &:before {
+      background-position: -800px -400px;
+    }
+  }
+  &.i-question {
+    &:before {
+      background-position: -900px -400px;
+    }
+  }
+  &.i-chat {
+    &:before {
+      background-position: 0 -500px;
+    }
+  }
+  &.i-envelope {
+    &:before {
+      background-position: -100px -500px;
+    }
+  }
+  &.i-book {
+    &:before {
+      background-position: -200px -500px;
+    }
+  }
+  &.i-star-gold {
+    &:before {
+      background-position: -300px -500px;
+    }
+  }
+  &.i-star-gray {
+    &:before {
+      background-position: -400px -500px;
+    }
+  }
+  &.i-scroll {
+    &:before {
+      background-position: -500px -500px;
+    }
+  }
+  &.i-people {
+    &:before {
+      background-position: -600px -500px;
+    }
+  }
+  &.i-camera {
+    &:before {
+      background-position: -700px -500px;
+    }
+  }
+  &.i-ruler {
+    &:before {
+      background-position: -800px -500px;
+    }
+  }
+  &.i-receipt {
+    &:before {
+      background-position: -900px -500px;
+    }
+  }
+  &.i-beach {
+    &:before {
+      background-position: 0 -600px;
+    }
+  }
+  &.i-bed {
     &:before {
       background-position: -100px -600px;
+    }
+  }
+  &.i-bed-gray {
+    &:before {
+      background-position: -200px -600px;
     }
   }
 }

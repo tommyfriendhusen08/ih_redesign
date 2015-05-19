@@ -12,9 +12,24 @@
   }
   .pattern-group {
     margin-bottom: 20px;
+    overflow: hidden;
     .pattern-subhead {
       margin-bottom: 10px;
       @include font-size(1.8);
+    }
+    .icon-wrapper {
+      border: 1px solid #000;
+      padding: 10px;
+      width: 20%;
+      float: left;
+      position: relative;
+      span {
+        margin: 0 auto;
+      }
+      p {
+        font-weight: bold;
+        text-align: center;
+      }
     }
   }
   pre {
