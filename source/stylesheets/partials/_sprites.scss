@@ -1,0 +1,23 @@
+// CSS for Sprites -- Long Live Sprites
+
+.icon {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100px;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    background: image-url('sprite-master.svg') no-repeat 0 0;
+    background-size: 1000px 700px;
+  }
+  &.bed {
+    &:before {
+      background-position: -100px -600px;
+    }
+  }
+}

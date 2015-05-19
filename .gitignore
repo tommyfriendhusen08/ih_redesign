@@ -46,3 +46,4 @@ bin
 vendor/bundle
 
 .sekrets.key
+.ruby-version
