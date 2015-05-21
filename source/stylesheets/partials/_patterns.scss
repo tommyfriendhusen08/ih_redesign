@@ -30,6 +30,12 @@
         font-weight: bold;
         text-align: center;
       }
+      &.icon-white {
+        background-color: $gray-charcoal;
+        p {
+          color: #fff;
+        }
+      }
     }
   }
   pre {
