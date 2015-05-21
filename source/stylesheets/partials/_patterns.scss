@@ -17,6 +17,25 @@
       margin-bottom: 10px;
       @include font-size(1.8);
     }
+    .color-box {
+      width: 100%;
+      min-height: 50px;
+      &.color-gold {
+        background-color: $gold;
+      }
+      &.color-gray-light {
+        background-color: $gray-light;
+      }
+      &.color-gray-charcoal {
+        background-color: $gray-charcoal;
+      }
+      &.color-gray-text {
+        background-color: $gray-text;
+      }
+      &.color-gray-dark {
+        background-color: $gray-dark;
+      }
+    }
     .icon-wrapper {
       border: 1px solid #000;
       padding: 10px;
